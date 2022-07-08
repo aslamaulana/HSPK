@@ -1,0 +1,121 @@
+ERROR - 2022-07-06 11:23:19 --> Error connecting to the database: Connection refused
+CRITICAL - 2022-07-06 11:23:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(156): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(88): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(896): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-07-06 11:23:33 --> Error connecting to the database: Connection refused
+CRITICAL - 2022-07-06 11:23:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(156): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(88): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(896): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-06 11:57:38 --> Undefined variable $validation
+in APPPATH/Views/user/Ssh/hspk_komponen_add.php on line 22.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen_add.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH/Views/user/Ssh/hspk_komponen_add.php', 22)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen_add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen_add', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(60): view('user/Ssh/hspk_komponen_add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data_add('12')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-06 12:26:01 --> number_format(): Argument #1 ($num) must be of type float, string given
+in APPPATH/Views/user/Ssh/hspk_komponen_add.php on line 90.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen_add.php(90): number_format('+ data[i].harga + ', 2, ',', 'ROOTPATH/public')
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen_add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen_add', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(60): view('user/Ssh/hspk_komponen_add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data_add('12')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-06 12:27:56 --> Undefined constant "data"
+in APPPATH/Views/user/Ssh/hspk_komponen_add.php on line 90.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen_add', [], true)
+ 4 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(60): view('user/Ssh/hspk_komponen_add', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data_add('12')
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-06 12:32:32 --> number_format(): Argument #1 ($num) must be of type float, string given
+in APPPATH/Views/user/Ssh/hspk_komponen_add.php on line 90.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen_add.php(90): number_format('data[i].harga', 2, ',', 'ROOTPATH/public')
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen_add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen_add', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(60): view('user/Ssh/hspk_komponen_add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data_add('12')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-06 12:36:01 --> number_format(): Argument #1 ($num) must be of type float, string given
+in APPPATH/Views/user/Ssh/hspk_komponen_add.php on line 90.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen_add.php(90): number_format(' + data[i].harga + ', 2, ',', 'ROOTPATH/public')
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen_add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen_add', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(60): view('user/Ssh/hspk_komponen_add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data_add('12')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-06 12:42:09 --> Undefined constant "data"
+in APPPATH/Views/user/Ssh/hspk_komponen_add.php on line 90.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen_add', [], true)
+ 4 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(60): view('user/Ssh/hspk_komponen_add', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data_add('12')
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-06 12:43:01 --> Undefined constant "data"
+in APPPATH/Views/user/Ssh/hspk_komponen_add.php on line 95.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen_add', [], true)
+ 4 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(60): view('user/Ssh/hspk_komponen_add', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data_add('12')
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

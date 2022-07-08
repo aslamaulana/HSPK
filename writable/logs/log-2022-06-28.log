@@ -1,0 +1,273 @@
+CRITICAL - 2022-06-28 00:27:25 --> Undefined variable $ssh
+in APPPATH/Views/user/Ssh/hspk_komponen_add.php on line 23.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen_add.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ssh', 'APPPATH/Views/user/Ssh/hspk_komponen_add.php', 23)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen_add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen_add', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(78): view('user/Ssh/hspk_komponen_add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data_edit('5')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-28 00:27:56 --> Undefined variable $ssh
+in APPPATH/Views/user/Ssh/hspk_komponen_add.php on line 23.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen_add.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ssh', 'APPPATH/Views/user/Ssh/hspk_komponen_add.php', 23)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen_add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen_add', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(78): view('user/Ssh/hspk_komponen_add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data_edit('5')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-28 00:34:14 --> Too few arguments to function App\Controllers\User\Ssh\Hspk_komponen::data_edit(), 1 passed in /opt/lampp/htdocs/ci/ROPK/HSPK/system/CodeIgniter.php on line 896 and exactly 2 expected
+in APPPATH/Controllers/User/Ssh/Hspk_komponen.php on line 67.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data_edit('7')
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-28 00:45:00 --> number_format(): Argument #1 ($num) must be of type float, array given
+in APPPATH/Views/user/Ssh/hspk.php on line 78.
+ 1 APPPATH/Views/user/Ssh/hspk.php(78): number_format([...], 2, ',', 'ROOTPATH/public')
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk.php(28): view('user/Ssh/hspk', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-28 09:17:44 --> Unknown column 'id_hspk.opd_id' in 'where clause'
+CRITICAL - 2022-06-28 09:17:44 --> Unknown column 'id_hspk.opd_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `tb_hspk`
+WHERE `tb_hspk`.`tahun` = \'2022\'
+AND `id_hspk`.`opd_id` = \'0002\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_hspk`
+WHERE `tb_hspk`.`tahun` = \'2022\'
+AND `id_hspk`.`opd_id` = \'0002\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_hspk`
+WHERE `tb_hspk`.`tahun` = \'2022\'
+AND `id_hspk`.`opd_id` = \'0002\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_hspk`
+WHERE `tb_hspk`.`tahun` = :tb_hspk.tahun:
+AND `id_hspk`.`opd_id` = :id_hspk.opd_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(771): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH/Models/User/Ssh/Model_hspk.php(16): CodeIgniter\Model->__call('getWhere', [...])
+ 7 APPPATH/Controllers/User/Ssh/Hspk.php(20): App\Models\User\Ssh\Model_hspk->hspk()
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->index()
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-28 11:40:29 --> Undefined variable $id_hspk
+in APPPATH/Views/admin/Ssh/hspk_laporan.php on line 12.
+ 1 APPPATH/Views/admin/Ssh/hspk_laporan.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_hspk', 'APPPATH/Views/admin/Ssh/hspk_laporan.php', 12)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/Ssh/hspk_laporan.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/Ssh/hspk_laporan', [], true)
+ 5 APPPATH/Controllers/Admin/Ssh/Hspk_laporan.php(30): view('admin/Ssh/hspk_laporan', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Hspk_laporan->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Hspk_laporan))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-28 20:13:36 --> Undefined variable $num
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 88.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $num', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 88)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(33): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('5')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-28 20:16:22 --> Undefined variable $num
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 119.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $num', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 119)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(33): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('5')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-28 20:17:05 --> Undefined variable $hspk
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 153.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hspk', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 153)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(33): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('5')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-28 21:06:42 --> Unknown column 'tb_ssh.kelompok_id' in 'on clause'
+CRITICAL - 2022-06-28 21:06:42 --> Unknown column 'tb_ssh.kelompok_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `tb_ssh`.*, `tb_kelompok`.`kelompok`
+FROM `tb_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_ssh`.`tahun` = \'2022\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_ssh`.*, `tb_kelompok`.`kelompok`
+FROM `tb_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_ssh`.`tahun` = \'2022\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_ssh`.*, `tb_kelompok`.`kelompok`
+FROM `tb_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_ssh`.`tahun` = \'2022\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT `tb_ssh`.*, `tb_kelompok`.`kelompok`
+FROM `tb_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_ssh`.`tahun` = :tb_ssh.tahun:', [...], false)
+ 5 APPPATH/Models/User/Ssh/Model_hspk_komponen.php(56): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(41): App\Models\User\Ssh\Model_hspk_komponen->ssh()
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data_add('5', 'A')
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-28 21:10:30 --> Unknown column 'tb_ssh.kelompok_id' in 'on clause'
+CRITICAL - 2022-06-28 21:10:30 --> Unknown column 'tb_ssh.kelompok_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `tb_hspk_komponen`.*, `tb_ssh`.`komponen`, `tb_ssh`.`spesifikasi`, `tb_ssh`.`satuan`, `tb_ssh`.`harga`, `tb_kelompok`.`kelompok`
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh` ON `tb_hspk_komponen`.`ssh_id` = `tb_ssh`.`id_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_hspk_komponen`.`tahun` = \'2023\'
+AND `tb_hspk_komponen`.`hspk_id` = \'5\'
+AND `tb_hspk_komponen`.`group` = \'A\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_hspk_komponen`.*, `tb_ssh`.`komponen`, `tb_ssh`.`spesifikasi`, `tb_ssh`.`satuan`, `tb_ssh`.`harga`, `tb_kelompok`.`kelompok`
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh` ON `tb_hspk_komponen`.`ssh_id` = `tb_ssh`.`id_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_hspk_komponen`.`tahun` = \'2023\'
+AND `tb_hspk_komponen`.`hspk_id` = \'5\'
+AND `tb_hspk_komponen`.`group` = \'A\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_hspk_komponen`.*, `tb_ssh`.`komponen`, `tb_ssh`.`spesifikasi`, `tb_ssh`.`satuan`, `tb_ssh`.`harga`, `tb_kelompok`.`kelompok`
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh` ON `tb_hspk_komponen`.`ssh_id` = `tb_ssh`.`id_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_hspk_komponen`.`tahun` = \'2023\'
+AND `tb_hspk_komponen`.`hspk_id` = \'5\'
+AND `tb_hspk_komponen`.`group` = \'A\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT `tb_hspk_komponen`.*, `tb_ssh`.`komponen`, `tb_ssh`.`spesifikasi`, `tb_ssh`.`satuan`, `tb_ssh`.`harga`, `tb_kelompok`.`kelompok`
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh` ON `tb_hspk_komponen`.`ssh_id` = `tb_ssh`.`id_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_hspk_komponen`.`tahun` = :tb_hspk_komponen.tahun:
+AND `tb_hspk_komponen`.`hspk_id` = :tb_hspk_komponen.hspk_id:
+AND `tb_hspk_komponen`.`group` = :tb_hspk_komponen.group:', [...], false)
+ 5 SYSTEMPATH/Model.php(771): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH/Models/User/Ssh/Model_hspk_komponen.php(28): CodeIgniter\Model->__call('getWhere', [...])
+ 7 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(20): App\Models\User\Ssh\Model_hspk_komponen->hspk_komponen_A('5')
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('5')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-28 21:16:00 --> Undefined array key "g"
+in APPPATH/Views/user/Ssh/hspk_komponen_add.php on line 13.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen_add.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "g"', 'APPPATH/Views/user/Ssh/hspk_komponen_add.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen_add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen_add', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(49): view('user/Ssh/hspk_komponen_add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data_add('5', 'A')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-28 22:16:03 --> Unknown column 'tb_ssh.kelompok_id' in 'on clause'
+CRITICAL - 2022-06-28 22:16:03 --> Unknown column 'tb_ssh.kelompok_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `tb_ssh`.*, `tb_kelompok`.`kelompok`
+FROM `tb_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_ssh`.`tahun` = \'2022\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_ssh`.*, `tb_kelompok`.`kelompok`
+FROM `tb_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_ssh`.`tahun` = \'2022\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_ssh`.*, `tb_kelompok`.`kelompok`
+FROM `tb_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_ssh`.`tahun` = \'2022\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT `tb_ssh`.*, `tb_kelompok`.`kelompok`
+FROM `tb_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_ssh`.`tahun` = :tb_ssh.tahun:', [...], false)
+ 5 SYSTEMPATH/Model.php(771): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH/Models/Admin/Ssh/Model_ssh.php(19): CodeIgniter\Model->__call('getWhere', [...])
+ 7 APPPATH/Controllers/Admin/Ssh/Ssh.php(20): App\Models\Admin\Ssh\Model_ssh->ssh()
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Ssh->index()
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Ssh))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-28 22:19:04 --> Unknown column 'tb_ssh.kelompok_id' in 'on clause'
+CRITICAL - 2022-06-28 22:19:04 --> Unknown column 'tb_ssh.kelompok_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `tb_hspk_komponen`.*, `tb_ssh`.`komponen`, `tb_ssh`.`spesifikasi`, `tb_ssh`.`satuan`, `tb_ssh`.`harga`, `tb_kelompok`.`kelompok`
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh` ON `tb_hspk_komponen`.`ssh_id` = `tb_ssh`.`id_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_hspk_komponen`.`tahun` = \'2023\'
+AND `tb_hspk_komponen`.`hspk_id` = \'5\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_hspk_komponen`.*, `tb_ssh`.`komponen`, `tb_ssh`.`spesifikasi`, `tb_ssh`.`satuan`, `tb_ssh`.`harga`, `tb_kelompok`.`kelompok`
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh` ON `tb_hspk_komponen`.`ssh_id` = `tb_ssh`.`id_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_hspk_komponen`.`tahun` = \'2023\'
+AND `tb_hspk_komponen`.`hspk_id` = \'5\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_hspk_komponen`.*, `tb_ssh`.`komponen`, `tb_ssh`.`spesifikasi`, `tb_ssh`.`satuan`, `tb_ssh`.`harga`, `tb_kelompok`.`kelompok`
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh` ON `tb_hspk_komponen`.`ssh_id` = `tb_ssh`.`id_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_hspk_komponen`.`tahun` = \'2023\'
+AND `tb_hspk_komponen`.`hspk_id` = \'5\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT `tb_hspk_komponen`.*, `tb_ssh`.`komponen`, `tb_ssh`.`spesifikasi`, `tb_ssh`.`satuan`, `tb_ssh`.`harga`, `tb_kelompok`.`kelompok`
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh` ON `tb_hspk_komponen`.`ssh_id` = `tb_ssh`.`id_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_hspk_komponen`.`tahun` = :tb_hspk_komponen.tahun:
+AND `tb_hspk_komponen`.`hspk_id` = :tb_hspk_komponen.hspk_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(771): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH/Models/Admin/Ssh/Model_hspk_komponen.php(24): CodeIgniter\Model->__call('getWhere', [...])
+ 7 APPPATH/Controllers/Admin/Ssh/Hspk_komponen.php(20): App\Models\Admin\Ssh\Model_hspk_komponen->hspk_komponen('5')
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Hspk_komponen->data('5')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Hspk_komponen))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-28 22:20:11 --> Call to undefined method App\Models\Admin\Ssh\Model_hspk_komponen::hspk_komponen
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/Ssh/Hspk_komponen.php(20): CodeIgniter\Model->__call('hspk_komponen', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Hspk_komponen->data('5')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Hspk_komponen))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-28 22:22:02 --> Undefined property: App\Controllers\Admin\Ssh\Hspk_komponen::$hspk1
+in APPPATH/Controllers/Admin/Ssh/Hspk_komponen.php on line 23.
+ 1 APPPATH/Controllers/Admin/Ssh/Hspk_komponen.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin\\Ssh\\Hspk_komponen::$hspk1', 'APPPATH/Controllers/Admin/Ssh/Hspk_komponen.php', 23)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Hspk_komponen->data('5')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Hspk_komponen))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

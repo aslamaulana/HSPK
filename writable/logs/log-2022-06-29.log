@@ -1,0 +1,535 @@
+CRITICAL - 2022-06-29 09:53:54 --> Undefined property: CodeIgniter\View\View::$db
+in APPPATH/Views/admin/Ssh/opd_data.php on line 32.
+ 1 APPPATH/Views/admin/Ssh/opd_data.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$db', 'APPPATH/Views/admin/Ssh/opd_data.php', 32)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/Ssh/opd_data.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/Ssh/opd_data', [], true)
+ 5 APPPATH/Controllers/Admin/Ssh/Opd_data.php(28): view('admin/Ssh/opd_data', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Opd_data->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Opd_data))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-29 09:55:13 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2022-06-29 09:55:13 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `tb_hspk`
+WHERE `id` = \'0002\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_hspk`
+WHERE `id` = \'0002\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_hspk`
+WHERE `id` = \'0002\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_hspk`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Views/admin/Ssh/opd_data.php(32): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/Ssh/opd_data.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/Ssh/opd_data', [], true)
+ 9 APPPATH/Controllers/Admin/Ssh/Opd_data.php(28): view('admin/Ssh/opd_data', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Opd_data->index()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Opd_data))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-29 09:55:16 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2022-06-29 09:55:16 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `tb_hspk`
+WHERE `id` = \'0002\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_hspk`
+WHERE `id` = \'0002\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_hspk`
+WHERE `id` = \'0002\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_hspk`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Views/admin/Ssh/opd_data.php(32): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/Ssh/opd_data.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/Ssh/opd_data', [], true)
+ 9 APPPATH/Controllers/Admin/Ssh/Opd_data.php(28): view('admin/Ssh/opd_data', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Opd_data->index()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Opd_data))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 09:55:28 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getNumRow()
+in APPPATH/Views/admin/Ssh/opd_data.php on line 32.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/Ssh/opd_data', [], true)
+ 4 APPPATH/Controllers/Admin/Ssh/Opd_data.php(28): view('admin/Ssh/opd_data', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Opd_data->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Opd_data))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 10:16:31 --> Array to string conversion
+in APPPATH/Controllers/Admin/Ssh/Hspk_komponen.php on line 32.
+ 1 APPPATH/Controllers/Admin/Ssh/Hspk_komponen.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Controllers/Admin/Ssh/Hspk_komponen.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Hspk_komponen->data('5', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Hspk_komponen))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 10:17:15 --> Array to string conversion
+in APPPATH/Controllers/Admin/Ssh/Hspk_komponen.php on line 32.
+ 1 APPPATH/Controllers/Admin/Ssh/Hspk_komponen.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Controllers/Admin/Ssh/Hspk_komponen.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Hspk_komponen->data('7', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Hspk_komponen))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 11:19:09 --> Undefined array key "index"
+in APPPATH/Views/user/Ssh/hspk.php on line 92.
+ 1 APPPATH/Views/user/Ssh/hspk.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "index"', 'APPPATH/Views/user/Ssh/hspk.php', 92)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk.php(28): view('user/Ssh/hspk', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 11:19:49 --> Undefined array key "hspk_satuan"
+in APPPATH/Views/user/Ssh/hspk.php on line 105.
+ 1 APPPATH/Views/user/Ssh/hspk.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "hspk_satuan"', 'APPPATH/Views/user/Ssh/hspk.php', 105)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk.php(28): view('user/Ssh/hspk', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 11:20:18 --> Undefined array key "id_hspk"
+in APPPATH/Views/user/Ssh/hspk.php on line 109.
+ 1 APPPATH/Views/user/Ssh/hspk.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_hspk"', 'APPPATH/Views/user/Ssh/hspk.php', 109)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk.php(28): view('user/Ssh/hspk', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-29 13:13:42 --> Unknown column 'tb_kla_jawaban_verifikator.opd_id' in 'on clause'
+CRITICAL - 2022-06-29 13:13:42 --> Unknown column 'tb_kla_jawaban_verifikator.opd_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `tb_verifikasi`
+LEFT JOIN `auth_groups` ON `tb_kla_jawaban_verifikator`.`opd_id` = `auth_groups`.`id`
+WHERE `hspk_id` = \'5\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_verifikasi`
+LEFT JOIN `auth_groups` ON `tb_kla_jawaban_verifikator`.`opd_id` = `auth_groups`.`id`
+WHERE `hspk_id` = \'5\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_verifikasi`
+LEFT JOIN `auth_groups` ON `tb_kla_jawaban_verifikator`.`opd_id` = `auth_groups`.`id`
+WHERE `hspk_id` = \'5\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_verifikasi`
+LEFT JOIN `auth_groups` ON `tb_kla_jawaban_verifikator`.`opd_id` = `auth_groups`.`id`
+WHERE `hspk_id` = :hspk_id:', [...], false)
+ 5 APPPATH/Views/admin/Ssh/hspk.php(92): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/Ssh/hspk.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/Ssh/hspk', [], true)
+ 9 APPPATH/Controllers/Admin/Ssh/Hspk.php(32): view('admin/Ssh/hspk', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Hspk->paket('0002', 'Badan Perencanaan Pembangunan Daerah')
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Hspk))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 13:58:29 --> Undefined array key "tahun"
+in APPPATH/Models/User/Ssh/Model_hspk.php on line 16.
+ 1 APPPATH/Models/User/Ssh/Model_hspk.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tahun"', 'APPPATH/Models/User/Ssh/Model_hspk.php', 16)
+ 2 APPPATH/Controllers/User/Ssh/Hspk.php(20): App\Models\User\Ssh\Model_hspk->hspk()
+ 3 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->index()
+ 4 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 14:04:37 --> Undefined property: App\Controllers\User\Verifikasi\Data::$verifikator
+in APPPATH/Controllers/User/Verifikasi/Data.php on line 22.
+ 1 APPPATH/Controllers/User/Verifikasi/Data.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\User\\Verifikasi\\Data::$verifikator', 'APPPATH/Controllers/User/Verifikasi/Data.php', 22)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Verifikasi\Data->ajukan('5')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Verifikasi\Data))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 15:34:50 --> Undefined array key "B"
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 206.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "B"', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 206)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 15:46:59 --> Undefined variable $bb
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 227.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bb', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 227)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 15:47:47 --> Undefined variable $bb
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 227.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bb', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 227)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 15:48:27 --> Undefined variable $bb
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 227.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bb', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 227)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 15:48:29 --> Undefined variable $bb
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 227.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bb', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 227)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 20:10:14 --> Undefined array key "7B"
+in APPPATH/Views/user/Ssh/hspk.php on line 91.
+ 1 APPPATH/Views/user/Ssh/hspk.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "7B"', 'APPPATH/Views/user/Ssh/hspk.php', 91)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk.php(28): view('user/Ssh/hspk', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 20:12:51 --> Undefined variable $bb
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 227.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bb', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 227)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 20:17:41 --> Undefined variable $bb
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 225.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bb', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 225)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 20:17:43 --> Undefined variable $bb
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 225.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bb', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 225)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 20:21:01 --> Undefined array key "B"
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 219.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "B"', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 219)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 20:41:09 --> Undefined array key "B"
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 226.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "B"', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 226)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 20:43:18 --> Undefined array key "B"
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 219.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "B"', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 219)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 20:46:20 --> Undefined array key "B"
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 218.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(218): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "B"', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 218)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 20:49:14 --> Undefined array key "B"
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 218.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(218): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "B"', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 218)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 20:49:37 --> Undefined array key "C"
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 218.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(218): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "C"', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 218)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 20:52:01 --> Undefined array key "C"
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 206.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "C"', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 206)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 20:55:12 --> Undefined array key "C"
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 206.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "C"', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 206)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 20:55:35 --> Undefined array key "C"
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 206.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "C"', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 206)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 20:55:37 --> Undefined array key "C"
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 206.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "C"', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 206)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 20:59:46 --> Undefined array key "C"
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 206.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "C"', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 206)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 21:00:43 --> Undefined array key "C"
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 206.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "C"', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 206)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 21:00:44 --> Undefined array key "C"
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 206.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "C"', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 206)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 21:00:47 --> Undefined array key "C"
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 206.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "C"', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 206)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 21:06:26 --> Array to string conversion
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 208.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Views/user/Ssh/hspk_komponen.php', 208)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 21:12:36 --> Unsupported operand types: string * string
+in APPPATH/Views/user/Ssh/hspk_komponen.php on line 125.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen', [], true)
+ 4 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(37): view('user/Ssh/hspk_komponen', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('7')
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 21:13:41 --> Undefined array key "7C"
+in APPPATH/Views/user/Ssh/hspk.php on line 91.
+ 1 APPPATH/Views/user/Ssh/hspk.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "7C"', 'APPPATH/Views/user/Ssh/hspk.php', 91)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk.php(28): view('user/Ssh/hspk', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 21:15:38 --> Undefined array key "7C"
+in APPPATH/Views/user/Ssh/hspk.php on line 91.
+ 1 APPPATH/Views/user/Ssh/hspk.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "7C"', 'APPPATH/Views/user/Ssh/hspk.php', 91)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk.php(28): view('user/Ssh/hspk', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 21:15:39 --> Undefined array key "7C"
+in APPPATH/Views/user/Ssh/hspk.php on line 91.
+ 1 APPPATH/Views/user/Ssh/hspk.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "7C"', 'APPPATH/Views/user/Ssh/hspk.php', 91)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk.php(28): view('user/Ssh/hspk', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 21:18:22 --> Undefined array key "tahun"
+in APPPATH/Views/_layout/navbar.php on line 8.
+ 1 APPPATH/Views/_layout/navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tahun"', 'APPPATH/Views/_layout/navbar.php', 8)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/_layout/navbar.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(429): CodeIgniter\View\View->render('_layout/navbar', null, true)
+ 5 APPPATH/Views/_layout/template.php(7): CodeIgniter\View\View->include('_layout/navbar')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/_layout/template.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('_layout/template', [], true)
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/Ssh/opd_data', [], true)
+10 APPPATH/Controllers/Admin/Ssh/Opd_data.php(28): view('admin/Ssh/opd_data', [...])
+11 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Opd_data->index()
+12 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Opd_data))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-29 21:18:54 --> Undefined array key "C"
+in APPPATH/Views/admin/Ssh/hspk_komponen.php on line 142.
+ 1 APPPATH/Views/admin/Ssh/hspk_komponen.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "C"', 'APPPATH/Views/admin/Ssh/hspk_komponen.php', 142)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/Ssh/hspk_komponen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/Ssh/hspk_komponen', [], true)
+ 5 APPPATH/Controllers/Admin/Ssh/Hspk_komponen.php(41): view('admin/Ssh/hspk_komponen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Hspk_komponen->data('7', '0002')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

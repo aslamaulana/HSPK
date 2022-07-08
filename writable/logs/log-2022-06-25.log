@@ -1,0 +1,603 @@
+CRITICAL - 2022-06-25 06:58:11 --> Call to undefined method Myth\Auth\Password::hashPassword()
+in APPPATH/Controllers/Admin/User/Users.php on line 106.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users_create()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 06:58:41 --> Call to undefined method Myth\Auth\Password::hashPassword()
+in APPPATH/Controllers/Admin/User/Users.php on line 106.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users_create()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-25 07:08:13 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+CRITICAL - 2022-06-25 07:08:13 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2358): CodeIgniter\Database\BaseConnection->query('DELETE FROM `auth_groups`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH/Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH/Controllers/Admin/User/Bidang.php(174): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->hapus('0002')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-25 07:09:08 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+CRITICAL - 2022-06-25 07:09:08 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2358): CodeIgniter\Database\BaseConnection->query('DELETE FROM `auth_groups`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH/Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH/Controllers/Admin/User/Bidang.php(174): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->hapus('0002')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-25 07:10:18 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+CRITICAL - 2022-06-25 07:10:18 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2358): CodeIgniter\Database\BaseConnection->query('DELETE FROM `auth_groups`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH/Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH/Controllers/Admin/User/Bidang.php(174): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->hapus('0002')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-25 07:10:26 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+CRITICAL - 2022-06-25 07:10:26 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2358): CodeIgniter\Database\BaseConnection->query('DELETE FROM `auth_groups`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH/Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH/Controllers/Admin/User/Bidang.php(174): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->hapus('0002')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-25 07:10:28 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+CRITICAL - 2022-06-25 07:10:28 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2358): CodeIgniter\Database\BaseConnection->query('DELETE FROM `auth_groups`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH/Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH/Controllers/Admin/User/Bidang.php(174): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->hapus('0002')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-25 07:10:43 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+CRITICAL - 2022-06-25 07:10:43 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2358): CodeIgniter\Database\BaseConnection->query('DELETE FROM `auth_groups`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH/Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH/Controllers/Admin/User/Bidang.php(174): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->hapus('0002')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-25 07:11:38 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+CRITICAL - 2022-06-25 07:11:38 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2358): CodeIgniter\Database\BaseConnection->query('DELETE FROM `auth_groups`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH/Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH/Controllers/Admin/User/Bidang.php(174): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->hapus('0002')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-25 07:16:44 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+CRITICAL - 2022-06-25 07:16:44 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2358): CodeIgniter\Database\BaseConnection->query('DELETE FROM `auth_groups`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH/Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH/Controllers/Admin/User/Bidang.php(174): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->hapus('0002')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 07:18:12 --> Undefined variable $bidang
+in APPPATH/Controllers/Admin/User/Bidang.php on line 174.
+ 1 APPPATH/Controllers/Admin/User/Bidang.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidang', 'APPPATH/Controllers/Admin/User/Bidang.php', 174)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->hapus('0002')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-25 07:40:29 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+CRITICAL - 2022-06-25 07:40:29 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2358): CodeIgniter\Database\BaseConnection->query('DELETE FROM `auth_groups`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH/Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH/Controllers/Admin/User/Bidang.php(177): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->hapus('0002')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-25 07:40:31 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+CRITICAL - 2022-06-25 07:40:31 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2358): CodeIgniter\Database\BaseConnection->query('DELETE FROM `auth_groups`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH/Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH/Controllers/Admin/User/Bidang.php(177): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->hapus('0002')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-25 07:44:10 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+CRITICAL - 2022-06-25 07:44:10 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `auth_groups`
+WHERE `id` IN (\'0002\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2358): CodeIgniter\Database\BaseConnection->query('DELETE FROM `auth_groups`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH/Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(963): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH/Controllers/Admin/User/Bidang.php(156): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->hapus('0002')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-25 07:44:50 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+ERROR - 2022-06-25 07:45:01 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+ERROR - 2022-06-25 07:45:10 --> Cannot delete or update a parent row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+CRITICAL - 2022-06-25 08:06:57 --> Encrypter needs a starter key.
+in SYSTEMPATH/Encryption/Encryption.php on line 124.
+ 1 SYSTEMPATH/Encryption/Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH/Config/Services.php(237): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH/Controllers/BaseController.php(57): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH/CodeIgniter.php(859): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 08:12:28 --> Constant expression contains invalid operations
+in APPPATH/Controllers/BaseController.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-06-25 08:13:16 --> Encrypter needs a starter key.
+in SYSTEMPATH/Encryption/Encryption.php on line 124.
+ 1 SYSTEMPATH/Encryption/Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH/Config/Services.php(237): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH/Controllers/Admin/User/Bidang.php(97): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('0002')
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 08:14:52 --> Encrypter needs a starter key.
+in SYSTEMPATH/Encryption/Encryption.php on line 124.
+ 1 SYSTEMPATH/Encryption/Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH/Config/Services.php(237): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH/Controllers/Admin/User/Bidang.php(97): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('0002')
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 08:17:49 --> Encrypter needs a starter key.
+in SYSTEMPATH/Encryption/Encryption.php on line 124.
+ 1 SYSTEMPATH/Encryption/Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH/Config/Services.php(237): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH/Controllers/Admin/User/Bidang.php(97): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('0002')
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 08:19:21 --> Encrypter needs a starter key.
+in SYSTEMPATH/Encryption/Encryption.php on line 124.
+ 1 SYSTEMPATH/Encryption/Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH/Config/Services.php(237): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH/Controllers/Admin/User/Bidang.php(97): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('0002')
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 08:26:05 --> Encrypter needs a starter key.
+in SYSTEMPATH/Encryption/Encryption.php on line 124.
+ 1 SYSTEMPATH/Encryption/Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH/Config/Services.php(237): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH/Controllers/Admin/User/Bidang.php(97): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('0002')
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 08:26:47 --> Encrypter needs a starter key.
+in SYSTEMPATH/Encryption/Encryption.php on line 124.
+ 1 SYSTEMPATH/Encryption/Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH/Config/Services.php(237): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH/Controllers/Admin/User/Bidang.php(97): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('0002')
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 08:27:21 --> CodeIgniter\Config\Services::encrypter(): Argument #1 ($config) must be of type ?Config\Encryption, string given, called in /opt/lampp/htdocs/ci/tryoutdoor/codeigniter4/system/Config/BaseService.php on line 251
+in SYSTEMPATH/Config/Services.php on line 228.
+ 1 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\Services::encrypter('gdsgS')
+ 2 APPPATH/Controllers/Admin/User/Bidang.php(97): CodeIgniter\Config\BaseService::__callStatic('encrypter', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('0002')
+ 4 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 08:28:18 --> CodeIgniter\Config\Services::encrypter(): Argument #1 ($config) must be of type ?Config\Encryption, string given, called in /opt/lampp/htdocs/ci/tryoutdoor/codeigniter4/system/Config/BaseService.php on line 251
+in SYSTEMPATH/Config/Services.php on line 228.
+ 1 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\Services::encrypter('gdsgS')
+ 2 APPPATH/Controllers/Admin/User/Bidang.php(97): CodeIgniter\Config\BaseService::__callStatic('encrypter', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('0002')
+ 4 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 08:28:59 --> Encrypter needs a starter key.
+in SYSTEMPATH/Encryption/Encryption.php on line 124.
+ 1 SYSTEMPATH/Encryption/Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH/Config/Services.php(237): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH/Controllers/Admin/User/Bidang.php(97): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('0002')
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 08:37:53 --> Undefined variable $encrypter
+in APPPATH/Controllers/Admin/User/Bidang.php on line 97.
+ 1 APPPATH/Controllers/Admin/User/Bidang.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $encrypter', 'APPPATH/Controllers/Admin/User/Bidang.php', 97)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('0002')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 08:45:58 --> CodeIgniter\Config\Services::encrypter(): Argument #1 ($config) must be of type ?Config\Encryption, string given, called in /opt/lampp/htdocs/ci/tryoutdoor/codeigniter4/system/Config/BaseService.php on line 251
+in SYSTEMPATH/Config/Services.php on line 228.
+ 1 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\Services::encrypter('0002')
+ 2 APPPATH/Helpers/su_helper.php(41): CodeIgniter\Config\BaseService::__callStatic('encrypter', [...])
+ 3 APPPATH/Controllers/Admin/User/Bidang.php(97): kunci('0002')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('0002')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 08:46:55 --> CodeIgniter\Config\Services::encrypter(): Argument #1 ($config) must be of type ?Config\Encryption, string given, called in /opt/lampp/htdocs/ci/tryoutdoor/codeigniter4/system/Config/BaseService.php on line 251
+in SYSTEMPATH/Config/Services.php on line 228.
+ 1 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\Services::encrypter('0002')
+ 2 APPPATH/Helpers/su_helper.php(41): CodeIgniter\Config\BaseService::__callStatic('encrypter', [...])
+ 3 APPPATH/Controllers/Admin/User/Bidang.php(97): kunci('0002')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('0002')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 08:52:48 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 98.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(98): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/su_helper.php(47): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('ROOTPATH/public')
+ 3 APPPATH/Controllers/Admin/User/Bidang.php(98): buka('0002')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('0002')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:00:42 --> Unable to find an available Sodium encryption handler.
+in SYSTEMPATH/Encryption/Encryption.php on line 96.
+ 1 SYSTEMPATH/Encryption/Encryption.php(96): CodeIgniter\Encryption\Exceptions\EncryptionException::forNoHandlerAvailable('Sodium')
+ 2 SYSTEMPATH/Config/Services.php(235): CodeIgniter\Encryption\Encryption->__construct(Object(Config\Encryption))
+ 3 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH/Helpers/su_helper.php(41): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 APPPATH/Controllers/Admin/User/Bidang.php(97): kunci('0002')
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('0002')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:00:56 --> Unable to find an available md5 encryption handler.
+in SYSTEMPATH/Encryption/Encryption.php on line 96.
+ 1 SYSTEMPATH/Encryption/Encryption.php(96): CodeIgniter\Encryption\Exceptions\EncryptionException::forNoHandlerAvailable('md5')
+ 2 SYSTEMPATH/Config/Services.php(235): CodeIgniter\Encryption\Encryption->__construct(Object(Config\Encryption))
+ 3 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH/Helpers/su_helper.php(41): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 APPPATH/Controllers/Admin/User/Bidang.php(97): kunci('0002')
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('0002')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:02:21 --> Call to undefined function mcrypt_encrypt()
+in APPPATH/Helpers/su_helper.php on line 53.
+ 1 APPPATH/Controllers/Admin/User/Bidang.php(97): kunci('0002')
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('0002')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:18:31 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 98.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(98): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/su_helper.php(47): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('ROOTPATH/public')
+ 3 APPPATH/Controllers/Admin/User/Bidang.php(98): buka('0002')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('0002')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:18:40 --> Too few arguments to function App\Controllers\Admin\User\Bidang::bidang_edit(), 0 passed in /opt/lampp/htdocs/ci/tryoutdoor/codeigniter4/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/Admin/User/Bidang.php on line 95.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:18:54 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 98.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(98): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/su_helper.php(47): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('ROOTPATH/public')
+ 3 APPPATH/Controllers/Admin/User/Bidang.php(98): buka('*Np')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('*Np')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:20:37 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 98.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(98): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/su_helper.php(47): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('ROOTPATH/public')
+ 3 APPPATH/Controllers/Admin/User/Bidang.php(97): buka('*Np')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('*Np')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:20:39 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 98.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(98): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/su_helper.php(47): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('ROOTPATH/public')
+ 3 APPPATH/Controllers/Admin/User/Bidang.php(97): buka('*Np')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('*Np')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:21:45 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 98.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(98): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/su_helper.php(47): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('ROOTPATH/public')
+ 3 APPPATH/Controllers/Admin/User/Bidang.php(97): buka('´qà¼_')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('´qà¼_', 'ÉôË_Zá__\'Ëk‡î¥à_³ï__')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:22:55 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 98.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(98): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/su_helper.php(47): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('•‹u_')
+ 3 APPPATH/Controllers/Admin/User/Bidang.php(97): buka('Ü·« _ÿ}_‚_ëmÉÖ¯‹ÒQr>ÂW_¤þHÏÈuÎ^•‹u_')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('Ü·« _ÿ}_‚_ëmÉÖ¯‹ÒQr>ÂW_¤þHÏÈuÎ^•‹u_')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:24:05 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 98.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(98): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/su_helper.php(47): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('ROOTPATH/public')
+ 3 APPPATH/Controllers/Admin/User/Bidang.php(97): buka('\'Qñ¥’,±Š')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('\'Qñ¥’,±Š')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:25:51 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 98.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(98): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/su_helper.php(47): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('ROOTPATH/public')
+ 3 APPPATH/Controllers/Admin/User/Bidang.php(97): buka('\'Qñ¥’,±Š')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('\'Qñ¥’,±Š')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:26:21 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 98.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(98): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/su_helper.php(47): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('Ïˆ—xs¬–äÛñw~±nâB2ÇŒ-')
+ 3 APPPATH/Controllers/Admin/User/Bidang.php(97): buka('t®~êEb>…kôyîßŠ˜lYù_,`±8_˜æ_Ç:zÑ_Ïˆ—xs¬–äÛñw~±nâB2ÇŒ-')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('t®~êEb>…kôyîßŠ˜lYù_,`±8_˜æ_Ç:zÑ_Ïˆ—xs¬–äÛñw~±nâB2ÇŒ-')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:29:16 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 98.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(98): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/su_helper.php(47): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('Ïˆ—xs¬–äÛñw~±nâB2ÇŒ-')
+ 3 APPPATH/Controllers/Admin/User/Bidang.php(97): buka('t®~êEb>…kôyîßŠ˜lYù_,`±8_˜æ_Ç:zÑ_Ïˆ—xs¬–äÛñw~±nâB2ÇŒ-')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('t®~êEb>…kôyîßŠ˜lYù_,`±8_˜æ_Ç:zÑ_Ïˆ—xs¬–äÛñw~±nâB2ÇŒ-')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:29:31 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 98.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(98): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/su_helper.php(47): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('·Ñwò8¤y')
+ 3 APPPATH/Controllers/Admin/User/Bidang.php(97): buka('™¸³_J¥b_‘i\\:q," °·PG_üÜ!5À€é&_ÿŒ·Ñwò8¤y')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('™¸³_J¥b_‘i\\:q," °·PG_üÜ!5À€é&_ÿŒ·Ñwò8¤y')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:30:29 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 98.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(98): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/su_helper.php(47): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('ROOTPATH/public')
+ 3 APPPATH/Controllers/Admin/User/Bidang.php(97): buka('ii')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('ii')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:34:09 --> hex2bin(): Input string must be hexadecimal string
+in APPPATH/Helpers/su_helper.php on line 53.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'hex2bin(): Input string must be hexadecimal string', 'APPPATH/Helpers/su_helper.php', 53)
+ 2 APPPATH/Helpers/su_helper.php(53): hex2bin('ii')
+ 3 APPPATH/Controllers/Admin/User/Bidang.php(97): buka('ii')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('ii')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:38:46 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 98.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(98): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/su_helper.php(53): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('ROOTPATH/public')
+ 3 APPPATH/Controllers/Admin/User/Bidang.php(97): buka('damNeB2Xi4G')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('damNeB2Xi4G', 'BOf3FVyOEuoio2NwOfzJVx1hH8rOFBuGRFBLAT', '3zVh9jdjH7N8e90rYLw==')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 09:39:56 --> hex2bin(): Hexadecimal input string must have an even length
+in APPPATH/Helpers/su_helper.php on line 48.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'hex2bin(): Hexadecimal input string must have an even length', 'APPPATH/Helpers/su_helper.php', 48)
+ 2 APPPATH/Helpers/su_helper.php(48): hex2bin('damNeB2Xi4G')
+ 3 APPPATH/Controllers/Admin/User/Bidang.php(97): buka('damNeB2Xi4G')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_edit('damNeB2Xi4G', 'BOf3FVyOEuoio2NwOfzJVx1hH8rOFBuGRFBLAT', '3zVh9jdjH7N8e90rYLw==')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-25 10:19:15 --> required] is not a valid rule.
+in SYSTEMPATH/Validation/Validation.php on line 314.
+ 1 SYSTEMPATH/Validation/Validation.php(314): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required]')
+ 2 SYSTEMPATH/Validation/Validation.php(173): CodeIgniter\Validation\Validation->processRules('nm', 'nm', 'Bappeda', [...], [...])
+ 3 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH/Controllers/Admin/User/Bidang.php(117): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_update()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-25 10:20:38 --> Duplicate entry 'BAPENDA' for key 'name'
+CRITICAL - 2022-06-25 10:20:38 --> Duplicate entry 'BAPENDA' for key 'name'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `auth_groups` SET `id` = \'0002\', `name` = \'BAPENDA\', `description` = \'Badan Perencanaan Pembangunan Daerah\'
+WHERE `auth_groups`.`id` IN (\'0002\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `auth_groups` SET `id` = \'0002\', `name` = \'BAPENDA\', `description` = \'Badan Perencanaan Pembangunan Daerah\'
+WHERE `auth_groups`.`id` IN (\'0002\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `auth_groups` SET `id` = \'0002\', `name` = \'BAPENDA\', `description` = \'Badan Perencanaan Pembangunan Daerah\'
+WHERE `auth_groups`.`id` IN (\'0002\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `auth_groups` SET `id` = :id.1:, `name` = :name:, `description` = :description:
+WHERE `auth_groups`.`id` IN :auth_groups.id:', [...], false)
+ 5 SYSTEMPATH/Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH/Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->update('0002', [...])
+ 9 APPPATH/Controllers/Admin/User/Bidang.php(130): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->bidang_update()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-25 10:21:54 --> Duplicate entry 'BAPENDA' for key 'name'

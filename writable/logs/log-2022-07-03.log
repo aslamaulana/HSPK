@@ -1,0 +1,394 @@
+CRITICAL - 2022-07-03 13:54:06 --> syntax error, unexpected token "echo"
+in APPPATH/Controllers/Admin/Asb/Asb_hspk.php on line 38.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/asb/asb_hspk/asb/9')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/asb/asb_hspk/asb/9')
+ 3 SYSTEMPATH/CodeIgniter.php(771): CodeIgniter\Router\Router->handle('admin/asb/asb_hspk/asb/9')
+ 4 SYSTEMPATH/CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 15:06:38 --> Undefined variable $validation
+in APPPATH/Views/user/Ssh/hspk_add.php on line 20.
+ 1 APPPATH/Views/user/Ssh/hspk_add.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH/Views/user/Ssh/hspk_add.php', 20)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_add', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk.php(76): view('user/Ssh/hspk_add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->hspk_add()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 15:07:14 --> Undefined variable $akun
+in APPPATH/Views/user/Ssh/hspk_add.php on line 22.
+ 1 APPPATH/Views/user/Ssh/hspk_add.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $akun', 'APPPATH/Views/user/Ssh/hspk_add.php', 22)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_add', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk.php(77): view('user/Ssh/hspk_add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->hspk_add()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 15:07:19 --> Undefined variable $akun
+in APPPATH/Views/user/Ssh/hspk_add.php on line 22.
+ 1 APPPATH/Views/user/Ssh/hspk_add.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $akun', 'APPPATH/Views/user/Ssh/hspk_add.php', 22)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_add', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk.php(77): view('user/Ssh/hspk_add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->hspk_add()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 15:26:28 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::findAll()
+in APPPATH/Controllers/User/Ssh/Hspk.php on line 73.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->hspk_add()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 17:52:36 --> Undefined array key "tahun"
+in APPPATH/Views/_layout/navbar.php on line 8.
+ 1 APPPATH/Views/_layout/navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tahun"', 'APPPATH/Views/_layout/navbar.php', 8)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/_layout/navbar.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(429): CodeIgniter\View\View->render('_layout/navbar', null, true)
+ 5 APPPATH/Views/_layout/template.php(7): CodeIgniter\View\View->include('_layout/navbar')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/_layout/template.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('_layout/template', [], true)
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_add', [], true)
+10 APPPATH/Controllers/User/Ssh/Hspk.php(81): view('user/Ssh/hspk_add', [...])
+11 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->hspk_add()
+12 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 18:05:24 --> Undefined variable $validation
+in APPPATH/Views/user/Ssh/hspk_edit.php on line 20.
+ 1 APPPATH/Views/user/Ssh/hspk_edit.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH/Views/user/Ssh/hspk_edit.php', 20)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_edit', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk.php(114): view('user/Ssh/hspk_edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->hspk_edit('9')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 18:29:41 --> Undefined array key "id_hspk"
+in APPPATH/Views/user/Ssh/hspk_edit.php on line 12.
+ 1 APPPATH/Views/user/Ssh/hspk_edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_hspk"', 'APPPATH/Views/user/Ssh/hspk_edit.php', 12)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_edit', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk.php(117): view('user/Ssh/hspk_edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->hspk_edit('9')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 18:30:44 --> Undefined array key "id_hspk"
+in APPPATH/Views/user/Ssh/hspk_edit.php on line 12.
+ 1 APPPATH/Views/user/Ssh/hspk_edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_hspk"', 'APPPATH/Views/user/Ssh/hspk_edit.php', 12)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_edit', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk.php(117): view('user/Ssh/hspk_edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->hspk_edit('9')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 18:30:46 --> Undefined array key "id_hspk"
+in APPPATH/Views/user/Ssh/hspk_edit.php on line 12.
+ 1 APPPATH/Views/user/Ssh/hspk_edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_hspk"', 'APPPATH/Views/user/Ssh/hspk_edit.php', 12)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_edit', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk.php(117): view('user/Ssh/hspk_edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->hspk_edit('9')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 18:36:59 --> Undefined variable $row
+in APPPATH/Views/user/Ssh/hspk_edit.php on line 22.
+ 1 APPPATH/Views/user/Ssh/hspk_edit.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH/Views/user/Ssh/hspk_edit.php', 22)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_edit', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk.php(117): view('user/Ssh/hspk_edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->hspk_edit('9')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 19:42:34 --> Undefined property: App\Controllers\User\Ssh\Ssh_pengajuan::$akun
+in APPPATH/Controllers/User/Ssh/Ssh_pengajuan.php on line 71.
+ 1 APPPATH/Controllers/User/Ssh/Ssh_pengajuan.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\User\\Ssh\\Ssh_pengajuan::$akun', 'APPPATH/Controllers/User/Ssh/Ssh_pengajuan.php', 71)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Ssh_pengajuan->pengajuan_add()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Ssh_pengajuan))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-07-03 20:04:58 --> Unknown column 'kelompok_id' in 'field list'
+CRITICAL - 2022-07-03 20:04:58 --> Unknown column 'kelompok_id' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb_ssh` (`komponen`, `spesifikasi`, `satuan`, `harga`, `kelompok_id`, `jenis_rincian_objek_sub_id`, `opd_id`, `tahun`, `created_by`, `created_at`, `updated_at`) VALUES (\'coba_komponen\', \'coba spesifikasi\', \'buat coba\', \'200000\', \'SSH\', \'51\', \'0002\', \'2023\', \'Rinova Chandra, S.Kom\', \'2022-07-03 20:04:58\', \'2022-07-03 20:04:58\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_ssh` (`komponen`, `spesifikasi`, `satuan`, `harga`, `kelompok_id`, `jenis_rincian_objek_sub_id`, `opd_id`, `tahun`, `created_by`, `created_at`, `updated_at`) VALUES (\'coba_komponen\', \'coba spesifikasi\', \'buat coba\', \'200000\', \'SSH\', \'51\', \'0002\', \'2023\', \'Rinova Chandra, S.Kom\', \'2022-07-03 20:04:58\', \'2022-07-03 20:04:58\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_ssh` (`komponen`, `spesifikasi`, `satuan`, `harga`, `kelompok_id`, `jenis_rincian_objek_sub_id`, `opd_id`, `tahun`, `created_by`, `created_at`, `updated_at`) VALUES (\'coba_komponen\', \'coba spesifikasi\', \'buat coba\', \'200000\', \'SSH\', \'51\', \'0002\', \'2023\', \'Rinova Chandra, S.Kom\', \'2022-07-03 20:04:58\', \'2022-07-03 20:04:58\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_ssh` (`komponen`, `spesifikasi`, `satuan`, `harga`, `kelompok_id`, `jenis_rincian_objek_sub_id`, `opd_id`, `tahun`, `created_by`, `created_at`, `updated_at`) VALUES (:komponen:, :spesifikasi:, :satuan:, :harga:, :kelompok_id:, :jenis_rincian_objek_sub_id:, :opd_id:, :tahun:, :created_by:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH/BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH/Controllers/User/Ssh/Ssh_pengajuan.php(98): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Ssh_pengajuan->ssh_create()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Ssh_pengajuan))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 20:16:37 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH/Model.php on line 268.
+ 1 SYSTEMPATH/Model.php(268): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH/BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH/Controllers/User/Verifikasi/Data.php(59): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Verifikasi\Data->ajukan_ssh('0')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Verifikasi\Data))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 20:18:31 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH/Model.php on line 268.
+ 1 SYSTEMPATH/Model.php(268): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH/BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH/Controllers/User/Verifikasi/Data.php(61): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Verifikasi\Data->ajukan_ssh('0')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Verifikasi\Data))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 20:19:58 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH/Model.php on line 268.
+ 1 SYSTEMPATH/Model.php(268): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH/BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH/Controllers/User/Verifikasi/Data.php(61): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Verifikasi\Data->ajukan_ssh('0')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Verifikasi\Data))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 20:21:16 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH/Model.php on line 268.
+ 1 SYSTEMPATH/Model.php(268): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH/BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH/Controllers/User/Verifikasi/Data.php(61): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Verifikasi\Data->ajukan_ssh('0')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Verifikasi\Data))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 20:31:56 --> Undefined array key "tahun"
+in APPPATH/Models/Admin/Ssh/Model_hspk.php on line 20.
+ 1 APPPATH/Models/Admin/Ssh/Model_hspk.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tahun"', 'APPPATH/Models/Admin/Ssh/Model_hspk.php', 20)
+ 2 APPPATH/Controllers/Admin/Ssh/Hspk.php(22): App\Models\Admin\Ssh\Model_hspk->hspk('0002')
+ 3 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Hspk->paket('0002', 'Badan Perencanaan Pembangunan Daerah')
+ 4 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Hspk))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-07-03 20:34:53 --> Unknown column 'tb_verifikasi.tahun' in 'where clause'
+CRITICAL - 2022-07-03 20:34:53 --> Unknown column 'tb_verifikasi.tahun' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `tb_ssh_verifikasi`
+WHERE `verifikasi` = \'diajukan\'
+AND `opd_id` = \'0002\'
+AND `tb_verifikasi`.`tahun` = \'2023\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_ssh_verifikasi`
+WHERE `verifikasi` = \'diajukan\'
+AND `opd_id` = \'0002\'
+AND `tb_verifikasi`.`tahun` = \'2023\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_ssh_verifikasi`
+WHERE `verifikasi` = \'diajukan\'
+AND `opd_id` = \'0002\'
+AND `tb_verifikasi`.`tahun` = \'2023\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_ssh_verifikasi`
+WHERE `verifikasi` = :verifikasi:
+AND `opd_id` = :opd_id:
+AND `tb_verifikasi`.`tahun` = :tb_verifikasi.tahun:', [...], false)
+ 5 APPPATH/Views/admin/Ssh/opd_data_ssh.php(42): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/Ssh/opd_data_ssh.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/Ssh/opd_data_ssh', [], true)
+ 9 APPPATH/Controllers/Admin/Ssh/Opd_data_ssh.php(28): view('admin/Ssh/opd_data_ssh', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Opd_data_ssh->index()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Opd_data_ssh))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 20:46:16 --> Undefined property: App\Controllers\Admin\Ssh\Ssh::$opd
+in APPPATH/Controllers/Admin/Ssh/Ssh.php on line 21.
+ 1 APPPATH/Controllers/Admin/Ssh/Ssh.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin\\Ssh\\Ssh::$opd', 'APPPATH/Controllers/Admin/Ssh/Ssh.php', 21)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Ssh->ssh_pengajuan('0002', 'Badan Perencanaan Pembangunan Daerah')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Ssh))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 20:47:16 --> Undefined variable $hspk
+in APPPATH/Views/admin/Ssh/ssh_pengajuan.php on line 62.
+ 1 APPPATH/Views/admin/Ssh/ssh_pengajuan.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hspk', 'APPPATH/Views/admin/Ssh/ssh_pengajuan.php', 62)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/Ssh/ssh_pengajuan.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/Ssh/ssh_pengajuan', [], true)
+ 5 APPPATH/Controllers/Admin/Ssh/Ssh.php(32): view('admin/Ssh/ssh_pengajuan', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Ssh->ssh_pengajuan('0002', 'Badan Perencanaan Pembangunan Daerah')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Ssh))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 20:47:32 --> Undefined array key "id_hspk"
+in APPPATH/Views/admin/Ssh/ssh_pengajuan.php on line 76.
+ 1 APPPATH/Views/admin/Ssh/ssh_pengajuan.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_hspk"', 'APPPATH/Views/admin/Ssh/ssh_pengajuan.php', 76)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/Ssh/ssh_pengajuan.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/Ssh/ssh_pengajuan', [], true)
+ 5 APPPATH/Controllers/Admin/Ssh/Ssh.php(32): view('admin/Ssh/ssh_pengajuan', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Ssh->ssh_pengajuan('0002', 'Badan Perencanaan Pembangunan Daerah')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Ssh))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 20:51:43 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH/Model.php on line 268.
+ 1 SYSTEMPATH/Model.php(268): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH/BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH/Controllers/Admin/Verifikasi/Data.php(70): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Verifikasi\Data->verifikasi_ssh()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Verifikasi\Data))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 20:53:43 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH/Model.php on line 268.
+ 1 SYSTEMPATH/Model.php(268): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH/BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH/Controllers/Admin/Verifikasi/Data.php(70): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Verifikasi\Data->verifikasi_ssh()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Verifikasi\Data))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 21:00:04 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH/Model.php on line 268.
+ 1 SYSTEMPATH/Model.php(268): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH/BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH/Controllers/User/Verifikasi/Data.php(77): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Verifikasi\Data->ajukan_ssh_ulang()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Verifikasi\Data))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-07-03 21:12:08 --> Unknown table 'HSPK.tb_ssh'
+CRITICAL - 2022-07-03 21:12:08 --> Unknown table 'HSPK.tb_ssh'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `tb_ssh`.*
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh_verifikasi` ON `tb_ssh`.`id_ssh` = `tb_ssh_verifikasi`.`ssh_id`
+WHERE `tb_ssh`.`tahun` = \'2023\'
+AND `verifikasi` = \'lolos\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_ssh`.*
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh_verifikasi` ON `tb_ssh`.`id_ssh` = `tb_ssh_verifikasi`.`ssh_id`
+WHERE `tb_ssh`.`tahun` = \'2023\'
+AND `verifikasi` = \'lolos\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_ssh`.*
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh_verifikasi` ON `tb_ssh`.`id_ssh` = `tb_ssh_verifikasi`.`ssh_id`
+WHERE `tb_ssh`.`tahun` = \'2023\'
+AND `verifikasi` = \'lolos\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT `tb_ssh`.*
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh_verifikasi` ON `tb_ssh`.`id_ssh` = `tb_ssh_verifikasi`.`ssh_id`
+WHERE `tb_ssh`.`tahun` = :tb_ssh.tahun:
+AND `verifikasi` = :verifikasi:', [...], false)
+ 5 SYSTEMPATH/Model.php(771): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH/Models/User/Ssh/Model_hspk_komponen.php(23): CodeIgniter\Model->__call('getWhere', [...])
+ 7 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(45): App\Models\User\Ssh\Model_hspk_komponen->ssh()
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data_add('9')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-07-03 21:12:15 --> Unknown table 'HSPK.tb_ssh'
+CRITICAL - 2022-07-03 21:12:15 --> Unknown table 'HSPK.tb_ssh'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `tb_ssh`.*
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh_verifikasi` ON `tb_ssh`.`id_ssh` = `tb_ssh_verifikasi`.`ssh_id`
+WHERE `tb_ssh`.`tahun` = \'2023\'
+AND `verifikasi` = \'lolos\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_ssh`.*
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh_verifikasi` ON `tb_ssh`.`id_ssh` = `tb_ssh_verifikasi`.`ssh_id`
+WHERE `tb_ssh`.`tahun` = \'2023\'
+AND `verifikasi` = \'lolos\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_ssh`.*
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh_verifikasi` ON `tb_ssh`.`id_ssh` = `tb_ssh_verifikasi`.`ssh_id`
+WHERE `tb_ssh`.`tahun` = \'2023\'
+AND `verifikasi` = \'lolos\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT `tb_ssh`.*
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh_verifikasi` ON `tb_ssh`.`id_ssh` = `tb_ssh_verifikasi`.`ssh_id`
+WHERE `tb_ssh`.`tahun` = :tb_ssh.tahun:
+AND `verifikasi` = :verifikasi:', [...], false)
+ 5 SYSTEMPATH/Model.php(771): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH/Models/User/Ssh/Model_hspk_komponen.php(23): CodeIgniter\Model->__call('getWhere', [...])
+ 7 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(45): App\Models\User\Ssh\Model_hspk_komponen->ssh()
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data_add('9')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 21:19:13 --> Trying to access array offset on value of type null
+in APPPATH/Views/user/Ssh/hspk_edit.php on line 12.
+ 1 APPPATH/Views/user/Ssh/hspk_edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Views/user/Ssh/hspk_edit.php', 12)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_edit', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk.php(117): view('user/Ssh/hspk_edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->hspk_edit('10709')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-03 21:33:56 --> Call to undefined method App\Models\User\Ssh\Model_ssh::fssh_edit
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/User/Ssh/Ssh_pengajuan.php(111): CodeIgniter\Model->__call('fssh_edit', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Ssh_pengajuan->pengajuan_edit('10709')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Ssh_pengajuan))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

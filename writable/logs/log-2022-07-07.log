@@ -1,0 +1,291 @@
+CRITICAL - 2022-07-07 19:23:29 --> Undefined array key "g"
+in APPPATH/Views/user/Ssh/hspk_komponen_add.php on line 13.
+ 1 APPPATH/Views/user/Ssh/hspk_komponen_add.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "g"', 'APPPATH/Views/user/Ssh/hspk_komponen_add.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user/Ssh/hspk_komponen_add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('user/Ssh/hspk_komponen_add', [], true)
+ 5 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(60): view('user/Ssh/hspk_komponen_add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data_add('11')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-07-07 19:40:36 --> Unknown table 'HSPK.tb_ssh'
+CRITICAL - 2022-07-07 19:40:36 --> Unknown table 'HSPK.tb_ssh'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `tb_hspk_komponen`.`index`, `tb_ssh`.*
+FROM `tb_hspk_komponen`
+WHERE `tb_hspk_komponen`.`hspk_id` = \'11\'
+AND `tb_hspk_komponen`.`group` = \'A\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_hspk_komponen`.`index`, `tb_ssh`.*
+FROM `tb_hspk_komponen`
+WHERE `tb_hspk_komponen`.`hspk_id` = \'11\'
+AND `tb_hspk_komponen`.`group` = \'A\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_hspk_komponen`.`index`, `tb_ssh`.*
+FROM `tb_hspk_komponen`
+WHERE `tb_hspk_komponen`.`hspk_id` = \'11\'
+AND `tb_hspk_komponen`.`group` = \'A\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT `tb_hspk_komponen`.`index`, `tb_ssh`.*
+FROM `tb_hspk_komponen`
+WHERE `tb_hspk_komponen`.`hspk_id` = :tb_hspk_komponen.hspk_id:
+AND `tb_hspk_komponen`.`group` = :tb_hspk_komponen.group:', [...], false)
+ 5 APPPATH/Views/admin/Ssh/excel.php(31): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/Ssh/excel.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/Ssh/excel', [], true)
+ 9 APPPATH/Controllers/Admin/Ssh/Hspk_laporan.php(56): view('admin/Ssh/excel', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Hspk_laporan->cetak()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Hspk_laporan))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-07-07 19:40:52 --> Unknown table 'HSPK.tb_ssh'
+CRITICAL - 2022-07-07 19:40:52 --> Unknown table 'HSPK.tb_ssh'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `tb_hspk_komponen`.`index`, `tb_ssh`.*
+FROM `tb_hspk_komponen`
+WHERE `tb_hspk_komponen`.`hspk_id` = \'11\'
+AND `tb_hspk_komponen`.`group` = \'A\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_hspk_komponen`.`index`, `tb_ssh`.*
+FROM `tb_hspk_komponen`
+WHERE `tb_hspk_komponen`.`hspk_id` = \'11\'
+AND `tb_hspk_komponen`.`group` = \'A\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_hspk_komponen`.`index`, `tb_ssh`.*
+FROM `tb_hspk_komponen`
+WHERE `tb_hspk_komponen`.`hspk_id` = \'11\'
+AND `tb_hspk_komponen`.`group` = \'A\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT `tb_hspk_komponen`.`index`, `tb_ssh`.*
+FROM `tb_hspk_komponen`
+WHERE `tb_hspk_komponen`.`hspk_id` = :tb_hspk_komponen.hspk_id:
+AND `tb_hspk_komponen`.`group` = :tb_hspk_komponen.group:', [...], false)
+ 5 APPPATH/Views/admin/Ssh/excel.php(31): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/Ssh/excel.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/Ssh/excel', [], true)
+ 9 APPPATH/Controllers/Admin/Ssh/Hspk_laporan.php(56): view('admin/Ssh/excel', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Hspk_laporan->cetak()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Hspk_laporan))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-07-07 19:41:03 --> Unknown table 'HSPK.tb_ssh'
+CRITICAL - 2022-07-07 19:41:03 --> Unknown table 'HSPK.tb_ssh'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `tb_hspk_komponen`.`index`, `tb_ssh`.*
+FROM `tb_hspk_komponen`
+WHERE `tb_hspk_komponen`.`hspk_id` = \'11\'
+AND `tb_hspk_komponen`.`group` = \'A\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_hspk_komponen`.`index`, `tb_ssh`.*
+FROM `tb_hspk_komponen`
+WHERE `tb_hspk_komponen`.`hspk_id` = \'11\'
+AND `tb_hspk_komponen`.`group` = \'A\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_hspk_komponen`.`index`, `tb_ssh`.*
+FROM `tb_hspk_komponen`
+WHERE `tb_hspk_komponen`.`hspk_id` = \'11\'
+AND `tb_hspk_komponen`.`group` = \'A\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT `tb_hspk_komponen`.`index`, `tb_ssh`.*
+FROM `tb_hspk_komponen`
+WHERE `tb_hspk_komponen`.`hspk_id` = :tb_hspk_komponen.hspk_id:
+AND `tb_hspk_komponen`.`group` = :tb_hspk_komponen.group:', [...], false)
+ 5 APPPATH/Views/admin/Ssh/excel.php(31): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/Ssh/excel.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/Ssh/excel', [], true)
+ 9 APPPATH/Controllers/Admin/Ssh/Hspk_laporan.php(56): view('admin/Ssh/excel', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Hspk_laporan->cetak()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Hspk_laporan))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-07-07 19:42:20 --> Unknown table 'HSPK.tb_ssh'
+CRITICAL - 2022-07-07 19:42:20 --> Unknown table 'HSPK.tb_ssh'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `tb_hspk_komponen`.`index`, `tb_ssh`.*
+FROM `tb_hspk_komponen`
+WHERE `tb_hspk_komponen`.`hspk_id` = \'11\'
+AND `tb_hspk_komponen`.`group` = \'A\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_hspk_komponen`.`index`, `tb_ssh`.*
+FROM `tb_hspk_komponen`
+WHERE `tb_hspk_komponen`.`hspk_id` = \'11\'
+AND `tb_hspk_komponen`.`group` = \'A\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_hspk_komponen`.`index`, `tb_ssh`.*
+FROM `tb_hspk_komponen`
+WHERE `tb_hspk_komponen`.`hspk_id` = \'11\'
+AND `tb_hspk_komponen`.`group` = \'A\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT `tb_hspk_komponen`.`index`, `tb_ssh`.*
+FROM `tb_hspk_komponen`
+WHERE `tb_hspk_komponen`.`hspk_id` = :tb_hspk_komponen.hspk_id:
+AND `tb_hspk_komponen`.`group` = :tb_hspk_komponen.group:', [...], false)
+ 5 APPPATH/Views/admin/Ssh/excel.php(31): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/Ssh/excel.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/Ssh/excel', [], true)
+ 9 APPPATH/Controllers/Admin/Ssh/Hspk_laporan.php(56): view('admin/Ssh/excel', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Hspk_laporan->cetak()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Hspk_laporan))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-07 20:08:49 --> include(&lt;!-- DEBUG-VIEW START 1 APPPATH/Views/admin/Ssh/excel.php --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;http://127.0.0.1:8081/toping/dist/css/adminlte.min.css&quot;&gt;
+&lt;table&gt;
+			&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;td colspan=&quot;7&quot;&gt;OPD : Badan Perencanaan Pembangunan Daerah&lt;/td&gt;
+			&lt;/tr&gt;
+										&lt;tr&gt;
+					&lt;td colspan=&quot;7&quot;&gt;Beban Gaji Pokok PNS&lt;/td&gt;
+				&lt;/tr&gt;
+													&lt;tr&gt;
+						&lt;td colspan=&quot;7&quot;&gt;coba&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td style=&quot;text-align:center;vertical-align:middle;font-weight: bold;&quot; width=&quot;0.5cm&quot;&gt;No&lt;/td&gt;
+						&lt;td style=&quot;text-align:center;vertical-align:middle;font-weight: bold;&quot; width=&quot;0.5cm&quot;&gt;
+							&lt;center&gt;Komponen&lt;/center&gt;
+						&lt;/td&gt;
+						&lt;td style=&quot;text-align:center;vertical-align:middle;font-weight: bold;&quot; width=&quot;40px&quot;&gt;spesifikasi&lt;/td&gt;
+						&lt;td style=&quot;text-align:center;vertical-align:middle;font-weight: bold;&quot; width=&quot;40px&quot;&gt;Satuan&lt;/td&gt;
+						&lt;td style=&quot;text-align:center;vertical-align:middle;font-weight: bold;&quot; width=&quot;60px&quot;&gt;Koefisien&lt;/td&gt;
+						&lt;td style=&quot;text-align:center;vertical-align:middle;font-weight: bold;&quot; width=&quot;60px&quot;&gt;Harga Satuan (Rp)&lt;/td&gt;
+						&lt;td style=&quot;text-align:center;vertical-align:middle;font-weight: bold;&quot; width=&quot;60px&quot;&gt;Jumlah Harga (Rp)&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr class=&quot;font-weight-bold&quot;&gt;
+						&lt;td&gt;A&lt;/td&gt;
+						&lt;td colspan=&quot;6&quot;&gt;Tenaga Kerja&lt;/td&gt;
+					&lt;/tr&gt;
+																&lt;tr&gt;
+							&lt;td&gt;1&lt;/td&gt;
+							&lt;td&gt;ELBOW WITH THREDED MALE OFF TAKE 90Â° MASPION&lt;/td&gt;
+							&lt;td&gt;25 x 3/4''''&lt;/td&gt;
+							&lt;td&gt;Buah&lt;/td&gt;
+							&lt;td&gt;4&lt;/td&gt;
+							&lt;td&gt;20233&lt;/td&gt;
+							&lt;td&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+										&lt;tr class=&quot;font-weight-bold&quot;&gt;
+						&lt;td&gt;B&lt;/td&gt;
+						&lt;td colspan=&quot;6&quot;&gt;Bahan&lt;/td&gt;
+					&lt;/tr&gt;
+																&lt;tr&gt;
+							&lt;td&gt;1&lt;/td&gt;
+							&lt;td&gt;Belanja Cetak Peraturan Daerah&lt;/td&gt;
+							&lt;td&gt;HVS Folio ukuran 70 gram, 2 (dua) muka, dengan tulisan naskah warna hitam dan Jilid (hard cover) per buku dengan menggunakan lem perekat dan dijahit, sampul menggunakan jenis kertas karton tebal double folio&lt;/td&gt;
+							&lt;td&gt;Eksemplar&lt;/td&gt;
+							&lt;td&gt;20&lt;/td&gt;
+							&lt;td&gt;75000&lt;/td&gt;
+							&lt;td&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+										&lt;tr class=&quot;font-weight-bold&quot;&gt;
+						&lt;td&gt;C&lt;/td&gt;
+						&lt;td colspan=&quot;6&quot;&gt;Peralatan&lt;/td&gt;
+					&lt;/tr&gt;
+																&lt;tr&gt;
+							&lt;td&gt;1&lt;/td&gt;
+							&lt;td&gt;END CAP MASPION&lt;/td&gt;
+							&lt;td&gt;32&lt;/td&gt;
+							&lt;td&gt;Buah&lt;/td&gt;
+							&lt;td&gt;0.4&lt;/td&gt;
+							&lt;td&gt;24186&lt;/td&gt;
+							&lt;td&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+															&lt;tr&gt; &lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+
+&lt;/html&gt;
+&lt;!-- DEBUG-VIEW ENDED 1 APPPATH/Views/admin/Ssh/excel.php --&gt;
+): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Admin/Ssh/Hspk_laporan.php on line 56.
+ 1 APPPATH/Controllers/Admin/Ssh/Hspk_laporan.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(&lt;!-- DEBUG-VIEW START 1 APPPATH/Views/admin/Ssh/excel.php --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;http://127.0.0.1:8081/toping/dist/css/adminlte.min.css&quot;&gt;
+&lt;table&gt;
+			&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;td colspan=&quot;7&quot;&gt;OPD : Badan Perencanaan Pembangunan Daerah&lt;/td&gt;
+			&lt;/tr&gt;
+										&lt;tr&gt;
+					&lt;td colspan=&quot;7&quot;&gt;Beban Gaji Pokok PNS&lt;/td&gt;
+				&lt;/tr&gt;
+													&lt;tr&gt;
+						&lt;td colspan=&quot;7&quot;&gt;coba&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td style=&quot;text-align:center;vertical-align:middle;font-weight: bold;&quot; width=&quot;0.5cm&quot;&gt;No&lt;/td&gt;
+						&lt;td style=&quot;text-align:center;vertical-align:middle;font-weight: bold;&quot; width=&quot;0.5cm&quot;&gt;
+							&lt;center&gt;Komponen&lt;/center&gt;
+						&lt;/td&gt;
+						&lt;td style=&quot;text-align:center;vertical-align:middle;font-weight: bold;&quot; width=&quot;40px&quot;&gt;spesifikasi&lt;/td&gt;
+						&lt;td style=&quot;text-align:center;vertical-align:middle;font-weight: bold;&quot; width=&quot;40px&quot;&gt;Satuan&lt;/td&gt;
+						&lt;td style=&quot;text-align:center;vertical-align:middle;font-weight: bold;&quot; width=&quot;60px&quot;&gt;Koefisien&lt;/td&gt;
+						&lt;td style=&quot;text-align:center;vertical-align:middle;font-weight: bold;&quot; width=&quot;60px&quot;&gt;Harga Satuan (Rp)&lt;/td&gt;
+						&lt;td style=&quot;text-align:center;vertical-align:middle;font-weight: bold;&quot; width=&quot;60px&quot;&gt;Jumlah Harga (Rp)&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr class=&quot;font-weight-bold&quot;&gt;
+						&lt;td&gt;A&lt;/td&gt;
+						&lt;td colspan=&quot;6&quot;&gt;Tenaga Kerja&lt;/td&gt;
+					&lt;/tr&gt;
+																&lt;tr&gt;
+							&lt;td&gt;1&lt;/td&gt;
+							&lt;td&gt;ELBOW WITH THREDED MALE OFF TAKE 90Â° MASPION&lt;/td&gt;
+							&lt;td&gt;25 x 3/4\'\'\'\'&lt;/td&gt;
+							&lt;td&gt;Buah&lt;/td&gt;
+							&lt;td&gt;4&lt;/td&gt;
+							&lt;td&gt;20233&lt;/td&gt;
+							&lt;td&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+										&lt;tr class=&quot;font-weight-bold&quot;&gt;
+						&lt;td&gt;B&lt;/td&gt;
+						&lt;td colspan=&quot;6&quot;&gt;Bahan&lt;/td&gt;
+					&lt;/tr&gt;
+																&lt;tr&gt;
+							&lt;td&gt;1&lt;/td&gt;
+							&lt;td&gt;Belanja Cetak Peraturan Daerah&lt;/td&gt;
+							&lt;td&gt;HVS Folio ukuran 70 gram, 2 (dua) muka, dengan tulisan naskah warna hitam dan Jilid (hard cover) per buku dengan menggunakan lem perekat dan dijahit, sampul menggunakan jenis kertas karton tebal double folio&lt;/td&gt;
+							&lt;td&gt;Eksemplar&lt;/td&gt;
+							&lt;td&gt;20&lt;/td&gt;
+							&lt;td&gt;75000&lt;/td&gt;
+							&lt;td&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+										&lt;tr class=&quot;font-weight-bold&quot;&gt;
+						&lt;td&gt;C&lt;/td&gt;
+						&lt;td colspan=&quot;6&quot;&gt;Peralatan&lt;/td&gt;
+					&lt;/tr&gt;
+																&lt;tr&gt;
+							&lt;td&gt;1&lt;/td&gt;
+							&lt;td&gt;END CAP MASPION&lt;/td&gt;
+							&lt;td&gt;32&lt;/td&gt;
+							&lt;td&gt;Buah&lt;/td&gt;
+							&lt;td&gt;0.4&lt;/td&gt;
+							&lt;td&gt;24186&lt;/td&gt;
+							&lt;td&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+															&lt;tr&gt; &lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+
+&lt;/html&gt;
+&lt;!-- DEBUG-VIEW ENDED 1 APPPATH/Views/admin/Ssh/excel.php --&gt;
+): Failed to open stream: No such file or directory', 'APPPATH/Controllers/Admin/Ssh/Hspk_laporan.php', 56)
+ 2 APPPATH/Controllers/Admin/Ssh/Hspk_laporan.php(56): include()
+ 3 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Hspk_laporan->cetak()
+ 4 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Hspk_laporan))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-07 20:44:45 --> Undefined array key "opd_id"
+in APPPATH/Views/admin/Ssh/excel.php on line 13.
+ 1 APPPATH/Views/admin/Ssh/excel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opd_id"', 'APPPATH/Views/admin/Ssh/excel.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/Ssh/excel.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/Ssh/excel', [], true)
+ 5 APPPATH/Controllers/Admin/Ssh/Hspk_laporan.php(56): view('admin/Ssh/excel', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Ssh\Hspk_laporan->cetak()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ssh\Hspk_laporan))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

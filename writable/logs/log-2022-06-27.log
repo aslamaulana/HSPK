@@ -1,0 +1,618 @@
+CRITICAL - 2022-06-27 03:48:41 --> date_default_timezone_set(): Timezone ID 'Indonesia/Jakarta' is invalid
+in SYSTEMPATH/CodeIgniter.php on line 196.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'date_default_timezone_set(): Timezone ID \'Indonesia/Jakarta\' is invalid', 'SYSTEMPATH/CodeIgniter.php', 196)
+ 2 SYSTEMPATH/CodeIgniter.php(196): date_default_timezone_set('Indonesia/Jakarta')
+ 3 FCPATH/index.php(43): CodeIgniter\CodeIgniter->initialize()
+ 4 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-27 09:34:55 --> Table 'ROPK.user' doesn't exist
+CRITICAL - 2022-06-27 09:34:55 --> Table 'ROPK.user' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `user`
+WHERE `user`.`group_id` = \'0002\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+WHERE `user`.`group_id` = \'0002\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+WHERE `user`.`group_id` = \'0002\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `user`.`group_id` = :user.group_id:', [...], false)
+ 5 APPPATH/Views/admin/User/bidang.php(52): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/User/bidang.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/User/bidang', [], true)
+ 9 APPPATH/Controllers/Admin/User/Bidang.php(35): view('admin/User/bidang', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->index()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-27 09:35:14 --> Unknown column 'users.group_id' in 'where clause'
+CRITICAL - 2022-06-27 09:35:14 --> Unknown column 'users.group_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `users`
+WHERE `users`.`group_id` = \'0002\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`group_id` = \'0002\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`group_id` = \'0002\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`group_id` = :users.group_id:', [...], false)
+ 5 APPPATH/Views/admin/User/bidang.php(52): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/User/bidang.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/User/bidang', [], true)
+ 9 APPPATH/Controllers/Admin/User/Bidang.php(35): view('admin/User/bidang', [...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->index()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 09:35:34 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::numRow()
+in APPPATH/Views/admin/User/bidang.php on line 52.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/User/bidang', [], true)
+ 4 APPPATH/Controllers/Admin/User/Bidang.php(35): view('admin/User/bidang', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\User\Bidang->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User\Bidang))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:06:14 --> Call to undefined method App\Models\Admin\User\Model_users::Users_filter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Users_filter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->user('494e2c4e0b93b971dc0dabcdfde8bdca725db17e2ac69bd1330126687ac4475fd31c9636a4acd9578a52d7049f7f26816eba89bd')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:09:09 --> Call to undefined method App\Models\Admin\User\Model_users::Users_filter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Users_filter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->user('494e2c4e0b93b971dc0dabcdfde8bdca725db17e2ac69bd1330126687ac4475fd31c9636a4acd9578a52d7049f7f26816eba89bd')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:10:20 --> Call to undefined method App\Models\Admin\User\Model_users::Users_filter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Users_filter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->user('494e2c4e0b93b971dc0dabcdfde8bdca725db17e2ac69bd1330126687ac4475fd31c9636a4acd9578a52d7049f7f26816eba89bd')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:11:16 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->user('494e2c4e0b93b971dc0dabcdfde8bdca725db17e2ac69bd1330126687ac4475fd31c9636a4acd9578a52d7049f7f26816eba89bd')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:13:02 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->user('590710a3fad3e17ca28a9314c97be52f5ac25cb1aca112e81d45e7de23dd75cdba770a938f2e4694499f0f4757577ec37c55fdea')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:13:57 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->user('590710a3fad3e17ca28a9314c97be52f5ac25cb1aca112e81d45e7de23dd75cdba770a938f2e4694499f0f4757577ec37c55fdea')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:14:20 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->user('590710a3fad3e17ca28a9314c97be52f5ac25cb1aca112e81d45e7de23dd75cdba770a938f2e4694499f0f4757577ec37c55fdea')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:15:05 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->user('590710a3fad3e17ca28a9314c97be52f5ac25cb1aca112e81d45e7de23dd75cdba770a938f2e4694499f0f4757577ec37c55fdea')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:16:16 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->user('fb1e078ecd9b8a4a9032dae3ac943d9d84233c64582479ed6ca3b3ad9c4b0b50d86cb95119d9b383c7133756fe4e68fa9f9aae8e')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:17:04 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users('fb1e078ecd9b8a4a9032dae3ac943d9d84233c64582479ed6ca3b3ad9c4b0b50d86cb95119d9b383c7133756fe4e68fa9f9aae8e')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:17:33 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users('fb1e078ecd9b8a4a9032dae3ac943d9d84233c64582479ed6ca3b3ad9c4b0b50d86cb95119d9b383c7133756fe4e68fa9f9aae8e')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:18:44 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users('fb1e078ecd9b8a4a9032dae3ac943d9d84233c64582479ed6ca3b3ad9c4b0b50d86cb95119d9b383c7133756fe4e68fa9f9aae8e')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:20:21 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users('fb1e078ecd9b8a4a9032dae3ac943d9d84233c64582479ed6ca3b3ad9c4b0b50d86cb95119d9b383c7133756fe4e68fa9f9aae8e')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:20:23 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users('fb1e078ecd9b8a4a9032dae3ac943d9d84233c64582479ed6ca3b3ad9c4b0b50d86cb95119d9b383c7133756fe4e68fa9f9aae8e')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:21:28 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users('fb1e078ecd9b8a4a9032dae3ac943d9d84233c64582479ed6ca3b3ad9c4b0b50d86cb95119d9b383c7133756fe4e68fa9f9aae8e')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:23:06 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(44): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users('fb1e078ecd9b8a4a9032dae3ac943d9d84233c64582479ed6ca3b3ad9c4b0b50d86cb95119d9b383c7133756fe4e68fa9f9aae8e')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:27:38 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(44): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users('fb1e078ecd9b8a4a9032dae3ac943d9d84233c64582479ed6ca3b3ad9c4b0b50d86cb95119d9b383c7133756fe4e68fa9f9aae8e')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:34:13 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(44): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users('fb1e078ecd9b8a4a9032dae3ac943d9d84233c64582479ed6ca3b3ad9c4b0b50d86cb95119d9b383c7133756fe4e68fa9f9aae8e')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:35:30 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(44): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users('fb1e078ecd9b8a4a9032dae3ac943d9d84233c64582479ed6ca3b3ad9c4b0b50d86cb95119d9b383c7133756fe4e68fa9f9aae8e')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:36:54 --> Undefined array key "p"
+in APPPATH/Controllers/Admin/User/Users.php on line 44.
+ 1 APPPATH/Controllers/Admin/User/Users.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "p"', 'APPPATH/Controllers/Admin/User/Users.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users('fb1e078ecd9b8a4a9032dae3ac943d9d84233c64582479ed6ca3b3ad9c4b0b50d86cb95119d9b383c7133756fe4e68fa9f9aae8e')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:37:13 --> Undefined array key "p"
+in APPPATH/Controllers/Admin/User/Users.php on line 44.
+ 1 APPPATH/Controllers/Admin/User/Users.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "p"', 'APPPATH/Controllers/Admin/User/Users.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users('fb1e078ecd9b8a4a9032dae3ac943d9d84233c64582479ed6ca3b3ad9c4b0b50d86cb95119d9b383c7133756fe4e68fa9f9aae8e')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:37:23 --> Undefined array key "p"
+in APPPATH/Controllers/Admin/User/Users.php on line 44.
+ 1 APPPATH/Controllers/Admin/User/Users.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "p"', 'APPPATH/Controllers/Admin/User/Users.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:37:49 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:38:10 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:40:58 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:41:01 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:41:35 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:42:48 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users_select()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:42:51 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users_select()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:43:46 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users_select()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:48:23 --> Interface "Spatie\MediaLibrary\HasMedia" not found
+in APPPATH/Controllers/Admin/User/Users.php on line 18.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/user/users/users_select')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/user/users/users_select')
+ 4 SYSTEMPATH/CodeIgniter.php(771): CodeIgniter\Router\Router->handle('admin/user/users/users_select')
+ 5 SYSTEMPATH/CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:50:09 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users_select()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:53:12 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users_select()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:53:26 --> foreach() argument must be of type array|object, null given
+in APPPATH/Views/admin/User/users.php on line 37.
+ 1 APPPATH/Views/admin/User/users.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH/Views/admin/User/users.php', 37)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/User/users.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/User/users', [], true)
+ 5 APPPATH/Controllers/Admin/User/Users.php(53): view('admin/User/users', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users_select()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:54:39 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users_select()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 10:57:12 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 11:02:21 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 11:04:12 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 11:04:31 --> Undefined array key "p"
+in APPPATH/Controllers/Admin/User/Users.php on line 44.
+ 1 APPPATH/Controllers/Admin/User/Users.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "p"', 'APPPATH/Controllers/Admin/User/Users.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 11:04:42 --> Undefined array key "tahun"
+in APPPATH/Views/_layout/navbar.php on line 8.
+ 1 APPPATH/Views/_layout/navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tahun"', 'APPPATH/Views/_layout/navbar.php', 8)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/_layout/navbar.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(429): CodeIgniter\View\View->render('_layout/navbar', null, true)
+ 5 APPPATH/Views/_layout/template.php(7): CodeIgniter\View\View->include('_layout/navbar')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/_layout/template.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('_layout/template', [], true)
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/User/users', [], true)
+10 APPPATH/Controllers/Admin/User/Users.php(37): view('admin/User/users', [...])
+11 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->index()
+12 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 11:05:05 --> Call to undefined method App\Models\Admin\User\Model_users::Usersfilter
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User/Users.php(45): CodeIgniter\Model->__call('Usersfilter', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 11:13:05 --> Too few arguments to function App\Controllers\Admin\user\Users::index(), 0 passed in /opt/lampp/htdocs/ci/tryoutdoor/codeigniter4/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/Admin/User/Users.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->index()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 11:15:26 --> Too few arguments to function App\Models\Admin\User\Model_users::Users(), 0 passed in /opt/lampp/htdocs/ci/tryoutdoor/codeigniter4/app/Controllers/Admin/User/Users.php on line 29 and exactly 1 expected
+in APPPATH/Models/Admin/User/Model_users.php on line 15.
+ 1 APPPATH/Controllers/Admin/User/Users.php(29): App\Models\Admin\User\Model_users->Users()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->index()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 11:15:33 --> Too few arguments to function App\Controllers\Admin\user\Users::uu(), 0 passed in /opt/lampp/htdocs/ci/tryoutdoor/codeigniter4/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/Admin/User/Users.php on line 42.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->uu()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 11:36:37 --> Undefined variable $bidang
+in APPPATH/Views/admin/User/users_add.php on line 14.
+ 1 APPPATH/Views/admin/User/users_add.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidang', 'APPPATH/Views/admin/User/users_add.php', 14)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/User/users_add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/User/users_add', [], true)
+ 5 APPPATH/Controllers/Admin/User/Users.php(75): view('admin/User/users_add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users_add('1f8ae932852b1800815d8066e90e60dfaa045f29b1c24616a6cb0f3c6f948ce9545a87389dcb0a5434636748e75e8f983bddcb40')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 11:38:55 --> Undefined variable $opd_id
+in APPPATH/Views/admin/User/users.php on line 9.
+ 1 APPPATH/Views/admin/User/users.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $opd_id', 'APPPATH/Views/admin/User/users.php', 9)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/User/users.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/User/users', [], true)
+ 5 APPPATH/Controllers/Admin/User/Users.php(37): view('admin/User/users', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 11:40:57 --> Undefined variable $opd_id
+in APPPATH/Views/admin/User/users.php on line 9.
+ 1 APPPATH/Views/admin/User/users.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $opd_id', 'APPPATH/Views/admin/User/users.php', 9)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/User/users.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/User/users', [], true)
+ 5 APPPATH/Controllers/Admin/User/Users.php(37): view('admin/User/users', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 11:47:39 --> Too few arguments to function App\Controllers\Admin\user\Users::user(), 0 passed in /opt/lampp/htdocs/ci/tryoutdoor/codeigniter4/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/Admin/User/Users.php on line 42.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->user()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-27 11:49:08 --> Cannot add or update a child row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+CRITICAL - 2022-06-27 11:49:08 --> Cannot add or update a child row: a foreign key constraint fails (`ROPK`.`auth_groups_users`, CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `auth_groups_users` (`group_id`, `user_id`) VALUES (\'5bc956b6d027c7ef86923e3b93648a2c9f4fc6519e2a037b4474fa88fd8e3b77533cbd3000718c3d4197c42db68929e0ed982a88\', \'4d46894abcf8d8c40510ca2190d05b6bb550ec00c71cc22c6010ebcface3161af2c932dfcaf1811b7ca9fd6e7b40a364cf7fd5ce\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `auth_groups_users` (`group_id`, `user_id`) VALUES (\'5bc956b6d027c7ef86923e3b93648a2c9f4fc6519e2a037b4474fa88fd8e3b77533cbd3000718c3d4197c42db68929e0ed982a88\', \'4d46894abcf8d8c40510ca2190d05b6bb550ec00c71cc22c6010ebcface3161af2c932dfcaf1811b7ca9fd6e7b40a364cf7fd5ce\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `auth_groups_users` (`group_id`, `user_id`) VALUES (\'5bc956b6d027c7ef86923e3b93648a2c9f4fc6519e2a037b4474fa88fd8e3b77533cbd3000718c3d4197c42db68929e0ed982a88\', \'4d46894abcf8d8c40510ca2190d05b6bb550ec00c71cc22c6010ebcface3161af2c932dfcaf1811b7ca9fd6e7b40a364cf7fd5ce\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `auth_groups_users` (`group_id`, `user_id`) VALUES (:group_id:, :user_id:)', [...], false)
+ 5 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH/BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH/Controllers/Admin/User/Users.php(136): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users_create()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 12:11:40 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 98.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(98): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/su_helper.php(48): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('ROOTPATH/public')
+ 3 APPPATH/Models/Admin/User/Model_users.php(59): buka('0002')
+ 4 APPPATH/Controllers/Admin/User/Users.php(146): App\Models\Admin\User\Model_users->Edit('0002')
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users_edit('9494d0e7939a06756805561aa4424efb64b29a1f02da744bad24c1cc256da0cac16b6d1ebb6a82f5de50a570f6891111efb020b1', '0002')
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 12:12:24 --> Undefined variable $opd_id
+in APPPATH/Views/admin/User/users_edit.php on line 8.
+ 1 APPPATH/Views/admin/User/users_edit.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $opd_id', 'APPPATH/Views/admin/User/users_edit.php', 8)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/User/users_edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/User/users_edit', [], true)
+ 5 APPPATH/Controllers/Admin/User/Users.php(156): view('admin/User/users_edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users_edit('9494d0e7939a06756805561aa4424efb64b29a1f02da744bad24c1cc256da0cac16b6d1ebb6a82f5de50a570f6891111efb020b1', '55babb2fd0a979f7c059f5cfb681b332169b2ca69711e310207bfb3c3eb5856c62290f5579c746367f3bd872b3d9ff7621f70ff6')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 12:13:57 --> Decrypting: authentication failed.
+in SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php on line 98.
+ 1 SYSTEMPATH/Encryption/Handlers/OpenSSLHandler.php(98): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH/Helpers/su_helper.php(48): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('ROOTPATH/public')
+ 3 APPPATH/Controllers/Admin/User/Users.php(164): buka('0002')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->users_update()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 12:16:14 --> Undefined variable $opd_id
+in APPPATH/Views/admin/User/users.php on line 9.
+ 1 APPPATH/Views/admin/User/users.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $opd_id', 'APPPATH/Views/admin/User/users.php', 9)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/User/users.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/User/users', [], true)
+ 5 APPPATH/Controllers/Admin/User/Users.php(37): view('admin/User/users', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 13:52:22 --> Undefined array key "nm"
+in APPPATH/Views/admin/User/users.php on line 17.
+ 1 APPPATH/Views/admin/User/users.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nm"', 'APPPATH/Views/admin/User/users.php', 17)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/User/users.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/User/users', [], true)
+ 5 APPPATH/Controllers/Admin/User/Users.php(54): view('admin/User/users', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\user\Users->user('10388bfc8b8622c1390050219e621115329d67f39050022ba4e7e43e652e70c14f378fd4c701949910dd8f257bc2c84ad717d762')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\user\Users))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-06-27 18:22:37 --> Undefined array key "tahun"
+in APPPATH/Views/_layout/navbar.php on line 8.
+ 1 APPPATH/Views/_layout/navbar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tahun"', 'APPPATH/Views/_layout/navbar.php', 8)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/_layout/navbar.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(429): CodeIgniter\View\View->render('_layout/navbar', null, true)
+ 5 APPPATH/Views/_layout/template.php(7): CodeIgniter\View\View->include('_layout/navbar')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/_layout/template.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('_layout/template', [], true)
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/RPJMD/sasaran', [], true)
+10 APPPATH/Controllers/Admin/Rpjmd/Sasaran.php(40): view('admin/RPJMD/sasaran', [...])
+11 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Admin\Rpjmd\Sasaran->index()
+12 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rpjmd\Sasaran))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-27 21:46:20 --> Unknown column 'opd_id' in 'field list'
+CRITICAL - 2022-06-27 21:46:20 --> Unknown column 'opd_id' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `tb_hspk` (`hspk_paket`, `hspk_satuan`, `opd_id`, `tahun`, `created_by`, `created_at`, `updated_at`) VALUES (\'1 M1 PENGUKURAN DAN PASANGAN BOUWPLANK\', \'m3\', \'0002\', \'2022\', \'Rinova Chandra, S.Kom\', \'2022-06-27 21:46:20\', \'2022-06-27 21:46:20\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_hspk` (`hspk_paket`, `hspk_satuan`, `opd_id`, `tahun`, `created_by`, `created_at`, `updated_at`) VALUES (\'1 M1 PENGUKURAN DAN PASANGAN BOUWPLANK\', \'m3\', \'0002\', \'2022\', \'Rinova Chandra, S.Kom\', \'2022-06-27 21:46:20\', \'2022-06-27 21:46:20\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_hspk` (`hspk_paket`, `hspk_satuan`, `opd_id`, `tahun`, `created_by`, `created_at`, `updated_at`) VALUES (\'1 M1 PENGUKURAN DAN PASANGAN BOUWPLANK\', \'m3\', \'0002\', \'2022\', \'Rinova Chandra, S.Kom\', \'2022-06-27 21:46:20\', \'2022-06-27 21:46:20\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_hspk` (`hspk_paket`, `hspk_satuan`, `opd_id`, `tahun`, `created_by`, `created_at`, `updated_at`) VALUES (:hspk_paket:, :hspk_satuan:, :opd_id:, :tahun:, :created_by:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH/BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH/Controllers/User/Ssh/Hspk.php(54): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk->hspk_create()
+11 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-06-27 23:33:55 --> Unknown column 'ttb_ssh.satuan' in 'field list'
+CRITICAL - 2022-06-27 23:33:55 --> Unknown column 'ttb_ssh.satuan' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `tb_hspk_komponen`.*, `tb_ssh`.`komponen`, `tb_ssh`.`spesifikasi`, `ttb_ssh`.`satuan`, `tb_ssh`.`harga`, `tb_kelompok`.`kelompok`
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh` ON `tb_hspk_komponen`.`ssh_id` = `tb_ssh`.`id_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_hspk_komponen`.`tahun` = \'2022\'
+AND `tb_hspk_komponen`.`hspk_id` = \'5\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_hspk_komponen`.*, `tb_ssh`.`komponen`, `tb_ssh`.`spesifikasi`, `ttb_ssh`.`satuan`, `tb_ssh`.`harga`, `tb_kelompok`.`kelompok`
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh` ON `tb_hspk_komponen`.`ssh_id` = `tb_ssh`.`id_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_hspk_komponen`.`tahun` = \'2022\'
+AND `tb_hspk_komponen`.`hspk_id` = \'5\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_hspk_komponen`.*, `tb_ssh`.`komponen`, `tb_ssh`.`spesifikasi`, `ttb_ssh`.`satuan`, `tb_ssh`.`harga`, `tb_kelompok`.`kelompok`
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh` ON `tb_hspk_komponen`.`ssh_id` = `tb_ssh`.`id_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_hspk_komponen`.`tahun` = \'2022\'
+AND `tb_hspk_komponen`.`hspk_id` = \'5\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT `tb_hspk_komponen`.*, `tb_ssh`.`komponen`, `tb_ssh`.`spesifikasi`, `ttb_ssh`.`satuan`, `tb_ssh`.`harga`, `tb_kelompok`.`kelompok`
+FROM `tb_hspk_komponen`
+LEFT JOIN `tb_ssh` ON `tb_hspk_komponen`.`ssh_id` = `tb_ssh`.`id_ssh`
+LEFT JOIN `tb_kelompok` ON `tb_ssh`.`kelompok_id` = `tb_kelompok`.`id_kelompok`
+WHERE `tb_hspk_komponen`.`tahun` = :tb_hspk_komponen.tahun:
+AND `tb_hspk_komponen`.`hspk_id` = :tb_hspk_komponen.hspk_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(771): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH/Models/User/Ssh/Model_hspk_komponen.php(24): CodeIgniter\Model->__call('getWhere', [...])
+ 7 APPPATH/Controllers/User/Ssh/Hspk_komponen.php(20): App\Models\User\Ssh\Model_hspk_komponen->hspk_komponen('5')
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User\Ssh\Hspk_komponen->data('5')
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Ssh\Hspk_komponen))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
