@@ -30,6 +30,7 @@
 				<div class="input-group">
 					<select name="type" class="form-control type" required>
 						<option value="" disabled selected>pilih...</option>
+						<option value="pdf">PDF</option>
 						<option value="excel">Excel</option>
 					</select>
 				</div>

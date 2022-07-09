@@ -1,5 +1,52 @@
 <!DOCTYPE html>
 <html lang="">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style type="text/css">
+		.c25 {
+			border-spacing: 0;
+			border-collapse: collapse;
+			margin-right: auto;
+			width: 100%;
+			font-size: 11px;
+		}
+
+		.c28 {
+			border-right-style: solid;
+			padding: 5pt 5pt 5pt 5pt;
+			border-bottom-color: #000000;
+			border-top-width: 1.2pt;
+			border-right-width: 1.2pt;
+			border-left-color: #000000;
+			vertical-align: middle;
+			border-right-color: #000000;
+			border-left-width: 1.2pt;
+			border-top-style: solid;
+			border-left-style: solid;
+			border-bottom-width: 1.2pt;
+			text-align: center;
+			border-top-color: #000000;
+			border-bottom-style: solid
+		}
+
+		.c29 {
+			padding: 5pt 5pt 5pt 5pt;
+			border-color: #000000;
+			vertical-align: top;
+			border-width: 0.7pt;
+			border-style: solid;
+		}
+
+		.c30 {
+			text-align: center;
+		}
+
+		.c31 {
+			text-align: right;
+		}
+	</style>
+</head>
 <table>
 	<tr>
 		<td></td>
@@ -46,13 +93,13 @@
 					<tr>
 						<td></td>
 						<td></td>
-						<td width="0.5cm"><b>No</b></td>
-						<td width="0.5cm"><b>Komponen</b></td>
-						<td width="40px"><b>spesifikasi</b></td>
-						<td width="40px"><b>Satuan</b></td>
-						<td width="60px"><b>Koefisien</b></td>
-						<td width="60px"><b>Harga Satuan (Rp)</b></td>
-						<td width="60px"><b>Jumlah Harga (Rp)</b></td>
+						<td class="c28" width="0.5cm"><b>No</b></td>
+						<td class="c28" width="0.5cm"><b>Komponen</b></td>
+						<td class="c28" width="40px"><b>Spesifikasi</b></td>
+						<td class="c28" width="40px"><b>Satuan</b></td>
+						<td class="c28" width="60px"><b>Koefisien</b></td>
+						<td class="c28" width="60px"><b>Harga Satuan (Rp)</b></td>
+						<td class="c28" width="60px"><b>Jumlah Harga (Rp)</b></td>
 						<td></td>
 						<td>Judul</td>
 					</tr>
@@ -168,8 +215,7 @@
 						<td></td>
 						<td></td>
 						<td class="text-center">D</td>
-						<td colspan="4">Jumlah Harga Tenaga Kerja, Bahan dan Peralatan (A+B+C)</td>
-						<td></td>
+						<td colspan="5">Jumlah Harga Tenaga Kerja, Bahan dan Peralatan (A+B+C)</td>
 						<td class="text-right">
 							<?php
 							isset($num['A']) ? $AA = ($num['A']) : $AA = ['0'];

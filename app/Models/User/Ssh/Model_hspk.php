@@ -73,4 +73,26 @@ class Model_hspk extends Model
 		$query = $this->db->table('tb_jenis_rincian_objek_sub')->getWhere(['jenis_rincian_objek_id' => $rincianobjek_id, 'kelompok_id' => 'HSPK'])->getResult();
 		return $query;
 	}
+	public function hspk_cetak()
+	{
+		return $this
+			->DISTINCT('auth_groups.description')
+			->DISTINCT('tb_hspk.opd_id')
+			->select('tb_hspk.opd_id')
+			->select('auth_groups.description')
+			->join('auth_groups', 'tb_hspk.opd_id = auth_groups.id', 'LEFT')
+			->join('tb_verifikasi', 'tb_hspk.id_hspk = tb_verifikasi.hspk_id', 'LEFT')
+			->getWhere(['tb_hspk.tahun' => $_SESSION['tahun'], 'tb_verifikasi.verifikasi' => 'lolos'])->getResultArray();
+	}
+	public function hspk_cetak_filter($id)
+	{
+		return $this
+			->DISTINCT('auth_groups.description')
+			->DISTINCT('tb_hspk.opd_id')
+			->select('tb_hspk.opd_id')
+			->select('auth_groups.description')
+			->join('auth_groups', 'tb_hspk.opd_id = auth_groups.id', 'LEFT')
+			->join('tb_verifikasi', 'tb_hspk.id_hspk = tb_verifikasi.hspk_id', 'LEFT')
+			->getWhere(['tb_hspk.tahun' => $_SESSION['tahun'], 'tb_hspk.opd_id' => $id, 'tb_verifikasi.verifikasi' => 'lolos'])->getResultArray();
+	}
 }

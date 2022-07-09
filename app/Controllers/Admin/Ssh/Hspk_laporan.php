@@ -5,6 +5,8 @@ namespace App\Controllers\Admin\Ssh;
 use App\Controllers\BaseController;
 use App\Models\Admin\Ssh\Model_hspk;
 use App\Models\Admin\User\Model_bidang;
+use Dompdf\Dompdf;
+use Dompdf\Options;
 
 class Hspk_laporan extends BaseController
 {
@@ -53,7 +55,39 @@ class Hspk_laporan extends BaseController
 					'hspk' => $hspk,
 					'db' => \Config\Database::connect(),
 				];
-				return view('admin/Ssh/excel', $data);
+				return view('admin/Ssh/print_excel', $data);
+			} elseif ($type == 'pdf') {
+				$id = $this->request->getVar('opd');
+
+				if ($id == 'all') {
+					$hspk = $this->hspk->hspk_cetak();
+				} else {
+					$hspk = $this->hspk->hspk_cetak_filter($id);
+				}
+
+				$data = [
+					'lok' => '<b>Data</b>',
+					'hspk' => $hspk,
+					'db' => \Config\Database::connect(),
+				];
+				// return view('surat/disposisi_print', $data);
+				$html = view('admin/Ssh/print_pdf', $data);
+
+				$options = new Options();
+				$options->set('defaultFont', 'serif');
+
+				// $dompdf = new Dompdf($options);
+				$dompdf = new Dompdf($options);
+				$dompdf->loadHtml($html, 'UTF-8');
+
+				// (Optional) Setup the paper size and orientation
+				$dompdf->setPaper('8.5x13', 'portrait');
+				// Render the HTML as PDF
+				$dompdf->render();
+
+				// Output the generated PDF to Browser
+				// $dompdf->stream();
+				$dompdf->stream('Lembar Disposisi-' . date('d-m-Y H:i'), array("Attachment" => false));
 			}
 		} else {
 			throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();

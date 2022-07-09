@@ -211,6 +211,14 @@
 								</a>
 							</li>
 						</ul>
+						<ul class="nav nav-treeview">
+							<li class="nav-item">
+								<a href="<?= base_url('/user/ssh/hspk_laporan'); ?>" class="nav-link <?= $mn == 'hspk-laporan' ? 'active' : ''; ?>">
+									<i class="far nav-icon"></i>
+									<p><small>2. </small> Laporan hspk</p>
+								</a>
+							</li>
+						</ul>
 					</li>
 				<?php endif; ?>
 			</ul>
