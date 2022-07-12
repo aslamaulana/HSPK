@@ -116,7 +116,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- <div class="row">
+		<div class="row">
 			<div class="col-md-2">
 				<div class="form-group">
 					<label>Satuan</label>
@@ -127,7 +127,7 @@
 					<input type="text" name="satuan" class="form-control" maxlength="20" require>
 				</div>
 			</div>
-		</div> -->
+		</div>
 	</div>
 	<div class="card-footer">
 		<button type="submit" class="btn btn-primary">Simpan</button>

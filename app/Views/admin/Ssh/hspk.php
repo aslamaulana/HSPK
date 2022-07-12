@@ -39,6 +39,7 @@
 			<tr class="">
 				<th class="c1">No</th>
 				<th class="">Paket</th>
+				<th class="c2">Satuan</th>
 				<th class="c2">Komponen</th>
 				<th class="c4">Total</th>
 				<!-- <th class="c4">OPD</th> -->
@@ -49,6 +50,7 @@
 			<tr>
 				<th>No</th>
 				<th>Paket</th>
+				<th>Satuan</th>
 				<th class="c2">komponen</th>
 				<th class="c4">Total</th>
 				<!-- <th class="c4">OPD</th> -->
@@ -61,6 +63,7 @@
 				<tr class="">
 					<td class="c1"><?= $nomor++; ?></td>
 					<td><?= $row['hspk_paket']; ?></td>
+					<td class="c2"><?= $row['hspk_satuan']; ?></td>
 					<td class="c2">
 						<?php $komponen = $db->table('tb_hspk_komponen')->getWhere(['hspk_id' => $row['id_hspk']])->getNumRows(); ?>
 						<a class="btn btn-success btn-circle btn-xs" href="<?= base_url('/admin/ssh/hspk_komponen/data/' . $row['id_hspk'] . '/' . $opd['id']); ?>">

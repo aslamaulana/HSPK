@@ -45,6 +45,7 @@
 			<tr class="">
 				<th class="c1">No</th>
 				<th class="">Paket</th>
+				<th class="c2">Satuan</th>
 				<th class="c2">Komponen</th>
 				<th class="c4">Total</th>
 				<th class="c5">Aksi</th>
@@ -54,6 +55,7 @@
 			<tr>
 				<th>No</th>
 				<th>Paket</th>
+				<th>Satuan</th>
 				<th class="c2">komponen</th>
 				<th class="c4">Total</th>
 				<th>Aksi</th>
@@ -65,6 +67,7 @@
 				<tr class="">
 					<td><?= $nomor++; ?></td>
 					<td><?= $row['hspk_paket']; ?></td>
+					<td  class="c2"><?= $row['hspk_satuan']; ?></td>
 					<td class="c2">
 						<?php $komponen = $db->table('tb_hspk_komponen')->getWhere(['hspk_id' => $row['id_hspk']])->getNumRows(); ?>
 						<a class="btn btn-success btn-circle btn-xs" href="<?= base_url('/user/ssh/hspk_komponen/data/' . $row['id_hspk']); ?>">
@@ -137,6 +140,11 @@
 										</a>
 									</div>
 								<?php elseif ($jawab->verifikasi == 'dikembalikan') : ?>
+									<!-- ------------------------------------------------------------------------------------------- -->
+									<a class="btn btn-info btn-circle btn-xs" href="<?= base_url() . '/user/ssh/hspk/hspk_edit/' . $row['id_hspk']; ?>">
+										<i class="nav-icon fas fa-pen-alt"></i>
+									</a>
+									<!-- ------------------------------------------------------------------------------------------- -->
 									<a class="dropdown-toggle btn btn-danger btn-circle btn-xs" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										Dikembalikan
 									</a>

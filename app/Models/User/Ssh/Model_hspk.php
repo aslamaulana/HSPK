@@ -34,6 +34,7 @@ class Model_hspk extends Model
 			->select('tb_jenis_akun.kode_jenis_akun')
 			->select('tb_jenis_akun.jenis_akun')
 			->select('tb_hspk.hspk_paket')
+			->select('tb_hspk.hspk_satuan')
 			->select('tb_hspk.id_hspk')
 			->join('tb_jenis_rincian_objek_sub', 'tb_hspk.jenis_rincian_objek_sub_id = tb_jenis_rincian_objek_sub.id_jenis_rincian_objek_sub', 'LEFT')
 			->join('tb_jenis_rincian_objek', 'tb_jenis_rincian_objek_sub.jenis_rincian_objek_id = tb_jenis_rincian_objek.id_jenis_rincian_objek', 'LEFT')

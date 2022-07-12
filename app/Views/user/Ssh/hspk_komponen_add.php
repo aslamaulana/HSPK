@@ -47,7 +47,7 @@
 			</div>
 			<div class="col-md-10">
 				<div class="input-group">
-					<input type="text" name="index" class="form-control" maxlength="20" required>
+					<input type="number" step="any" name="index" class="form-control" maxlength="20" required>
 				</div>
 			</div>
 		</div>

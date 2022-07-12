@@ -19,7 +19,7 @@
 		</li>
 	</ul>
 	<ul class="navbar-nav ml-auto">
-		<li class="nav-item d-none d-md-inline-block">
+		<li class="nav-item d-none d-md-inline-block" style="font-size: larger;">
 			<a style="pointer-events: none" class="nav-link">
 				<p id="timer"></p>
 			</a>
@@ -53,12 +53,12 @@
 </nav>
 
 <?php
-$timer = "tidak";
+$timer = "no";
 if ($timer == "aktif") {
 ?>
 	<script>
 		// Mengatur waktu akhir perhitungan mundur
-		var countDownDate = new Date("jul 14, 2022 22:50:25").getTime();
+		var countDownDate = new Date("Apr 30, 2022 22:50:25").getTime();
 
 		// Memperbarui hitungan mundur setiap 1 detik
 		var x = setInterval(function() {
@@ -72,7 +72,8 @@ if ($timer == "aktif") {
 			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 			// Keluarkan hasil dalam elemen dengan id = "demo"
-			document.getElementById("timer").innerHTML = 'Pengajuan SSH/SBU | ' + days + "Hari | " + hours + ":" + minutes + ":" + seconds + "";
+			document.getElementById("timer").innerHTML = days + "d " + hours + "h " +
+				minutes + "m " + seconds + "s ";
 			// Jika hitungan mundur selesai, tulis beberapa teks 
 			if (distance < 0) {
 				clearInterval(x);

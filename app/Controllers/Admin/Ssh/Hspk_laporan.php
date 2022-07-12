@@ -36,7 +36,7 @@ class Hspk_laporan extends BaseController
 	}
 	public function cetak()
 	{
-		if (has_permission('admin')) {
+		if (has_permission('Admin')) {
 			$type = $this->request->getVar('type');
 			if ($type == 'excel') {
 				$filename = "Print Data" . "-" . date('Y-m-d') . ".xls";

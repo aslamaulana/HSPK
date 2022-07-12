@@ -18,7 +18,7 @@
 			</div>
 			<div class="col-md-10">
 				<div class="input-group">
-					<select name="akun" id="akun_id" class="form-control select2bs4 <?= ($validation->hasError('akun')) ? 'is-invalid' : ''; ?>" required>
+					<select name="akun" id="akun_id" class="form-control select2bs4 <?= ($validation->hasError('akun')) ? 'is-invalid' : ''; ?>" >
 						<option value="">Tidak Dipilih...</option>
 						<?php foreach ($akun as $row) : ?>
 							<option value="<?= $row['id_jenis_akun']; ?>"><?= '[' . $row['kode_jenis_akun'] . '] ' . $row['jenis_akun']; ?></option>
@@ -38,7 +38,7 @@
 			</div>
 			<div class="col-md-10">
 				<div class="input-group">
-					<select name="kelompok" id="kelompok_id" class="form-control select2bs4 <?= ($validation->hasError('kelompok')) ? 'is-invalid' : ''; ?>" required> </select>
+					<select name="kelompok" id="kelompok_id" class="form-control select2bs4 <?= ($validation->hasError('kelompok')) ? 'is-invalid' : ''; ?>" > </select>
 					<div class="invalid-feedback">
 						<?= $validation->getError('kelompok'); ?>
 					</div>
@@ -53,7 +53,7 @@
 			</div>
 			<div class="col-md-10">
 				<div class="input-group">
-					<select name="jenis" id="jenis_id" class="form-control select2bs4 <?= ($validation->hasError('jenis')) ? 'is-invalid' : ''; ?>" required> </select>
+					<select name="jenis" id="jenis_id" class="form-control select2bs4 <?= ($validation->hasError('jenis')) ? 'is-invalid' : ''; ?>" > </select>
 					<div class="invalid-feedback">
 						<?= $validation->getError('jenis'); ?>
 					</div>
@@ -68,7 +68,7 @@
 			</div>
 			<div class="col-md-10">
 				<div class="input-group">
-					<select name="objek" id="objek_id" class="form-control select2bs4 <?= ($validation->hasError('objek')) ? 'is-invalid' : ''; ?>" required> </select>
+					<select name="objek" id="objek_id" class="form-control select2bs4 <?= ($validation->hasError('objek')) ? 'is-invalid' : ''; ?>" > </select>
 					<div class="invalid-feedback">
 						<?= $validation->getError('objek'); ?>
 					</div>
@@ -83,7 +83,7 @@
 			</div>
 			<div class="col-md-10">
 				<div class="input-group">
-					<select name="rincian_objek" id="rincian_objek_id" class="form-control select2bs4 <?= ($validation->hasError('rincian_objek')) ? 'is-invalid' : ''; ?>" required> </select>
+					<select name="rincian_objek" id="rincian_objek_id" class="form-control select2bs4 <?= ($validation->hasError('rincian_objek')) ? 'is-invalid' : ''; ?>" > </select>
 					<div class="invalid-feedback">
 						<?= $validation->getError('rincian_objek'); ?>
 					</div>
@@ -98,7 +98,7 @@
 			</div>
 			<div class="col-md-10">
 				<div class="input-group">
-					<select name="sub_rincian_objek" id="sub_rincian_objek_id" class="form-control select2bs4 <?= ($validation->hasError('sub_rincian_objek')) ? 'is-invalid' : ''; ?>" required>
+					<select name="sub_rincian_objek" id="sub_rincian_objek_id" class="form-control select2bs4 <?= ($validation->hasError('sub_rincian_objek')) ? 'is-invalid' : ''; ?>" >
 						<option value="<?= $hspk['id_jenis_rincian_objek_sub']; ?>"><?= '[' . $hspk['kode_jenis_rincian_objek_sub'] . '] ' . $hspk['jenis_rincian_objek_sub']; ?></option>
 					</select>
 					<div class="invalid-feedback">
@@ -119,7 +119,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- <div class="row">
+		<div class="row">
 			<div class="col-md-2">
 				<div class="form-group">
 					<label>Satuan</label>
@@ -130,7 +130,7 @@
 					<input type="text" name="satuan" class="form-control" maxlength="20" require>
 				</div>
 			</div>
-		</div> -->
+		</div>
 	</div>
 	<div class="card-footer">
 		<button type="submit" class="btn btn-primary">Simpan</button>
