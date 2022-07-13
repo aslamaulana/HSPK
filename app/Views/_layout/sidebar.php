@@ -129,7 +129,15 @@
 							<li class="nav-item">
 								<a href="<?= base_url('/admin/ssh/ssh'); ?>" class="nav-link <?= $mn == 'ssh' ? 'active' : ''; ?>">
 									<i class="far nav-icon"></i>
-									<p><small>1. </small> SSH/SBU</p>
+									<p><small>2. </small> SSH/SBU</p>
+								</a>
+							</li>
+						</ul>
+						<ul class="nav nav-treeview">
+							<li class="nav-item">
+								<a href="<?= base_url('/admin/sshsbu/ssh_laporan'); ?>" class="nav-link <?= $mn == 'ssh_laporan' ? 'active' : ''; ?>">
+									<i class="far nav-icon"></i>
+									<p><small>3. </small> SSH/SBU Cetak</p>
 								</a>
 							</li>
 						</ul>
