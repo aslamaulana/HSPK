@@ -133,14 +133,6 @@
 								</a>
 							</li>
 						</ul>
-						<ul class="nav nav-treeview">
-							<li class="nav-item">
-								<a href="<?= base_url('/admin/sshsbu/ssh_laporan'); ?>" class="nav-link <?= $mn == 'ssh_laporan' ? 'active' : ''; ?>">
-									<i class="far nav-icon"></i>
-									<p><small>3. </small> SSH/SBU Cetak</p>
-								</a>
-							</li>
-						</ul>
 					</li>
 					<li class="nav-item <?= $gr == 'a-hspk' ? 'menu-open' : ''; ?>">
 						<a href="#" class="nav-link <?= $gr == 'a-hspk' ? 'active' : ''; ?>">
@@ -158,14 +150,6 @@
 								</a>
 							</li>
 						</ul>
-						<ul class="nav nav-treeview">
-							<li class="nav-item">
-								<a href="<?= base_url('/admin/ssh/hspk_laporan'); ?>" class="nav-link <?= $mn == 'a-hspk-laporan' ? 'active' : ''; ?>">
-									<i class="far nav-icon"></i>
-									<p><small>2. </small> Laporan hspk</p>
-								</a>
-							</li>
-						</ul>
 					</li>
 					<li class="nav-item <?= $gr == 'a-asb' ? 'menu-open' : ''; ?>">
 						<a href="#" class="nav-link <?= $gr == 'a-asb' ? 'active' : ''; ?>">
@@ -180,6 +164,39 @@
 								<a href="<?= base_url('/admin/asb/asb'); ?>" class="nav-link <?= $mn == 'a-asb' ? 'active' : ''; ?>">
 									<i class="far nav-icon"></i>
 									<p><small>1. </small> Asb</p>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item <?= $gr == 'laporan' ? 'menu-open' : ''; ?>">
+						<a href="#" class="nav-link <?= $gr == 'laporan' ? 'active' : ''; ?>">
+							<i class="nav-icon fas fa-comment"></i>
+							<p>
+								Laporan
+								<i class="fas fa-angle-left right"></i>
+							</p>
+						</a>
+						<ul class="nav nav-treeview">
+							<li class="nav-item">
+								<a href="<?= base_url('/admin/sshsbu/ssh_laporan'); ?>" class="nav-link <?= $mn == 'ssh_laporan' ? 'active' : ''; ?>">
+									<i class="far nav-icon"></i>
+									<p><small>1. </small> SSH/SBU Cetak</p>
+								</a>
+							</li>
+						</ul>
+						<ul class="nav nav-treeview">
+							<li class="nav-item">
+								<a href="<?= base_url('/admin/ssh/hspk_laporan'); ?>" class="nav-link <?= $mn == 'a-hspk-laporan' ? 'active' : ''; ?>">
+									<i class="far nav-icon"></i>
+									<p><small>2. </small> Laporan hspk</p>
+								</a>
+							</li>
+						</ul>
+						<ul class="nav nav-treeview">
+							<li class="nav-item">
+								<a href="<?= base_url('/admin/sshsbu/sshhspk_laporan'); ?>" class="nav-link <?= $mn == 'sshhspk_laporan' ? 'active' : ''; ?>">
+									<i class="far nav-icon"></i>
+									<p><small>3. </small> SSH, SBU, HSPK</p>
 								</a>
 							</li>
 						</ul>

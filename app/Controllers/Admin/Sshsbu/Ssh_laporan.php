@@ -23,7 +23,7 @@ class Ssh_laporan extends BaseController
 		if (has_permission('Admin')) :
 			$opd = $this->opd->skpd();
 			$data = [
-				'gr' => 'ssh',
+				'gr' => 'laporan',
 				'mn' => 'ssh_laporan',
 				'lok' => '<b>SSH Laporan</b>',
 				'opd' => $opd,

@@ -1,20 +1,20 @@
 <?php
 
-namespace App\Controllers\Admin\Ssh;
+namespace App\Controllers\Admin\Sshsbu;
 
 use App\Controllers\BaseController;
-use App\Models\Admin\Ssh\Model_hspk;
+use App\Models\Admin\Sshsbu\Model_ssh;
 use App\Models\Admin\User\Model_bidang;
 use Dompdf\Dompdf;
 use Dompdf\Options;
 
-class Hspk_laporan extends BaseController
+class Sshhspk_laporan extends BaseController
 {
-	protected $hspk, $opd;
+	protected $ssh, $opd;
 
 	public function __construct()
 	{
-		$this->hspk = new Model_hspk();
+		$this->ssh = new Model_ssh();
 		$this->opd = new Model_bidang();
 	}
 
@@ -24,12 +24,12 @@ class Hspk_laporan extends BaseController
 			$opd = $this->opd->skpd();
 			$data = [
 				'gr' => 'laporan',
-				'mn' => 'a-hspk-laporan',
-				'lok' => '<b>HSPK Laporan</b>',
+				'mn' => 'sshhspk_laporan',
+				'lok' => '<b>SSH,ASB,HSPK Laporan</b>',
 				'opd' => $opd,
 				'db' => \Config\Database::connect(),
 			];
-			echo view('admin/Ssh/hspk_laporan', $data);
+			echo view('admin/Sshsbu/sshhspk_laporan', $data);
 		else :
 			throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
 		endif;
@@ -45,33 +45,23 @@ class Hspk_laporan extends BaseController
 				header('Content-Disposition: attachment; filename="' . $filename . '";');
 
 				$id = $this->request->getVar('opd');
-				if ($id == 'all') {
-					$hspk = $this->hspk->hspk_cetak();
-				} else {
-					$hspk = $this->hspk->hspk_cetak_filter($id);
-				}
+
 				$data = [
 					'lok' => '<b>Data</b>',
-					'hspk' => $hspk,
+					'opd' => $id,
 					'db' => \Config\Database::connect(),
 				];
-				return view('admin/Ssh/print_excel', $data);
+				return view('admin/Sshsbu/sshhspk_laporan_excel', $data);
 			} elseif ($type == 'pdf') {
 				$id = $this->request->getVar('opd');
 
-				if ($id == 'all') {
-					$hspk = $this->hspk->hspk_cetak();
-				} else {
-					$hspk = $this->hspk->hspk_cetak_filter($id);
-				}
-
 				$data = [
 					'lok' => '<b>Data</b>',
-					'hspk' => $hspk,
+					'opd' => $id,
 					'db' => \Config\Database::connect(),
 				];
 				// return view('surat/disposisi_print', $data);
-				$html = view('admin/Ssh/print_pdf', $data);
+				$html = view('admin/Sshsbu/sshhspk_laporan_excel', $data);
 
 				$options = new Options();
 				$options->set('defaultFont', 'serif');
