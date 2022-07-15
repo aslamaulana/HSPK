@@ -19,7 +19,7 @@
 				<div class="input-group">
 					<select name="opd" class="form-control select2bs4" required>
 						<option value=""></option>
-						<option value="all">All - Cetak Semua OPD</option>
+						<!-- <option value="all">All - Cetak Semua OPD</option> -->
 						<?php foreach ($opd as $row) : ?>
 							<option value="<?= $row['id']; ?>"><?= $row['name'] . ' - ' . $row['description']; ?></option>
 						<?php endforeach;

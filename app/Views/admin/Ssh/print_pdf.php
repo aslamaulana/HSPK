@@ -97,14 +97,17 @@
 							<td class="c29 c30"><?= $rox['satuan']; ?></td>
 							<td class="c29 c30"><?= $rox['index']; ?></td>
 							<td class="c29 c31"><?= number_format($rox['harga'], 2, ',', '.'); ?></td>
-							<td class="c29 c31"><?= number_format($num['A'][] = ($rox['harga'] * $rox['index']), 2, ',', '.'); ?></td>
+							<td class="c29 c31">
+								<?= number_format(($rox['harga'] * $rox['index']), 2, ',', '.'); ?>
+								<?php $num[$rol['id_hspk'] . 'A'][] = ($rox['harga'] * $rox['index']); ?>
+							</td>
 						</tr>
 					<?php endforeach; ?>
 					<tr>
 						<td></td>
 						<td></td>
 						<td colspan="6" style="text-align:right;font-weight:bold;" class="c29">Jumlah Harga Tenaga Kerja</td>
-						<td class="text-right c29 c31" style="font-weight:bold;"><?= isset($num['A']) ? number_format(array_sum($num['A']), 2, ',', '.') : '-'; ?></td>
+						<td class="text-right c29 c31" style="font-weight:bold;"><?= isset($num[$rol['id_hspk'] . 'A']) ? number_format(array_sum($num[$rol['id_hspk'] . 'A']), 2, ',', '.') : '-'; ?></td>
 					</tr>
 					<tr class="font-weight-bold">
 						<td></td>
@@ -124,14 +127,17 @@
 							<td class="c29 c30"><?= $rox['satuan']; ?></td>
 							<td class="c29 c30"><?= $rox['index']; ?></td>
 							<td class="c29 c31"><?= number_format($rox['harga'], 2, ',', '.'); ?></td>
-							<td class="c29 c31"><?= number_format($num['B'][] = ($rox['harga'] * $rox['index']), 2, ',', '.'); ?></td>
+							<td class="c29 c31">
+								<?= number_format(($rox['harga'] * $rox['index']), 2, ',', '.'); ?>
+								<?php $num[$rol['id_hspk'] . 'B'][] = ($rox['harga'] * $rox['index']); ?>
+							</td>
 						</tr>
 					<?php endforeach; ?>
 					<tr>
 						<td></td>
 						<td></td>
 						<td colspan="6" style="text-align:right;font-weight:bold;" class="c29">Jumlah Harga Bahan</td>
-						<td class="text-right c29 c31" style="font-weight:bold;"><?= isset($num['B']) ? number_format(array_sum($num['B']), 2, ',', '.') : '-'; ?></td>
+						<td class="text-right c29 c31" style="font-weight:bold;"><?= isset($num[$rol['id_hspk'] . 'B']) ? number_format(array_sum($num[$rol['id_hspk'] . 'B']), 2, ',', '.') : '-'; ?></td>
 					</tr>
 					<tr class="font-weight-bold">
 						<td></td>
@@ -151,14 +157,17 @@
 							<td class="c29 c30"><?= $rox['satuan']; ?></td>
 							<td class="c29 c30"><?= $rox['index']; ?></td>
 							<td class="c29 c31"><?= number_format($rox['harga'], 2, ',', '.'); ?></td>
-							<td class="c29 c31"><?= number_format($num['C'][] = ($rox['harga'] * $rox['index']), 2, ',', '.'); ?></td>
+							<td class="c29 c31">
+								<?= number_format(($rox['harga'] * $rox['index']), 2, ',', '.'); ?>
+								<?php $num[$rol['id_hspk'] . 'C'][] = ($rox['harga'] * $rox['index']); ?>
+							</td>
 						</tr>
 					<?php endforeach; ?>
 					<tr>
 						<td></td>
 						<td></td>
 						<td colspan="6" style="text-align:right;font-weight:bold;" class="c29">Jumlah Peralatan</td>
-						<td class="text-right c29 c31" style="font-weight:bold;"><?= isset($num['C']) ? number_format(array_sum($num['C']), 2, ',', '.') : '-'; ?></td>
+						<td class="text-right c29 c31" style="font-weight:bold;"><?= isset($num[$rol['id_hspk'] . 'C']) ? number_format(array_sum($num[$rol['id_hspk'] . 'C']), 2, ',', '.') : '-'; ?></td>
 					</tr>
 					<tr>
 						<td></td>

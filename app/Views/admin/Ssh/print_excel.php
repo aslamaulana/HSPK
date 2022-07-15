@@ -122,8 +122,11 @@
 							<td><?= $rox['spesifikasi']; ?></td>
 							<td><?= $rox['satuan']; ?></td>
 							<td><?= $rox['index']; ?></td>
-							<td><?= $rox['harga']; ?></td>
-							<td><?= $num['A'][] = ($rox['harga'] * $rox['index']); ?></td>
+							<td><?= number_format($rox['harga'], 2, ',', '.'); ?></td>
+							<td>
+								<?= number_format(($rox['harga'] * $rox['index']), 2, ',', '.'); ?>
+								<?php $num[$rol['id_hspk'] . 'A'][] = ($rox['harga'] * $rox['index']); ?>
+							</td>
 							<td></td>
 							<td></td>
 							<td>Tenaga_kerja<?= $nn; ?></td>
@@ -133,7 +136,7 @@
 						<td></td>
 						<td></td>
 						<td colspan="6" class="text-right">Jumlah Harga Tenaga Kerja</td>
-						<td class="text-right"><?= isset($num['A']) ? number_format(array_sum($num['A']), 2, ',', '.') : '-'; ?></td>
+						<td class="text-right"><?= isset($num[$rol['id_hspk'] . 'A']) ? number_format(array_sum($num[$rol['id_hspk'] . 'A']), 2, ',', '.') : '-'; ?></td>
 						<td></td>
 						<td></td>
 						<td></td>
@@ -158,8 +161,11 @@
 							<td><?= $rox['spesifikasi']; ?></td>
 							<td><?= $rox['satuan']; ?></td>
 							<td><?= $rox['index']; ?></td>
-							<td><?= $rox['harga']; ?></td>
-							<td><?= $num['B'][] = ($rox['harga'] * $rox['index']); ?></td>
+							<td><?= number_format($rox['harga'], 2, ',', '.'); ?></td>
+							<td>
+								<?= number_format(($rox['harga'] * $rox['index']), 2, ',', '.'); ?>
+								<?php $num[$rol['id_hspk'] . 'B'][] = ($rox['harga'] * $rox['index']); ?>
+							</td>
 							<td></td>
 							<td></td>
 							<td>Bahan<?= $nn; ?></td>
@@ -169,7 +175,7 @@
 						<td></td>
 						<td></td>
 						<td colspan="6" class="text-right">Jumlah Harga Bahan</td>
-						<td class="text-right"><?= isset($num['B']) ? number_format(array_sum($num['B']), 2, ',', '.') : '-'; ?></td>
+						<td class="text-right"><?= isset($num[$rol['id_hspk'] . 'B']) ? number_format(array_sum($num[$rol['id_hspk'] . 'B']), 2, ',', '.') : '-'; ?></td>
 						<td></td>
 						<td></td>
 						<td></td>
@@ -194,8 +200,11 @@
 							<td><?= $rox['spesifikasi']; ?></td>
 							<td><?= $rox['satuan']; ?></td>
 							<td><?= $rox['index']; ?></td>
-							<td><?= $rox['harga']; ?></td>
-							<td><?= $num['C'][] = ($rox['harga'] * $rox['index']); ?></td>
+							<td><?= number_format($rox['harga'], 2, ',', '.'); ?></td>
+							<td>
+								<?= number_format(($rox['harga'] * $rox['index']), 2, ',', '.'); ?>
+								<?php $num[$rol['id_hspk'] . 'C'][] = ($rox['harga'] * $rox['index']); ?>
+							</td>
 							<td></td>
 							<td></td>
 							<td>Peralatan<?= $nn; ?></td>
@@ -205,7 +214,7 @@
 						<td></td>
 						<td></td>
 						<td colspan="6" class="text-right">Jumlah Peralatan</td>
-						<td class="text-right"><?= isset($num['C']) ? number_format(array_sum($num['C']), 2, ',', '.') : '-'; ?></td>
+						<td class="text-right"><?= isset($num[$rol['id_hspk'] . 'C']) ? number_format(array_sum($num[$rol['id_hspk'] . 'C']), 2, ',', '.') : '-'; ?></td>
 						<td></td>
 						<td></td>
 						<td></td>
